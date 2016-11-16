@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>전자신문</title>
+  <style>
+  .box{
+    width: 900px;
+    height: 540px;
+    margin: 0 auto;
+    border: 1px #F00 solid;
+    position: relative;
+  }
+  .wrap{
+    width: 840px;
+    height: 380px;
+    position: relative;
+    margin: 160px auto;
+    background-color: blue;
+  }
+  .rightnews{
+    width: 307px;
+    height: 100%;
+    background-color: red;
+    float: right;
+  }
+  .leftnews{
+    width: 513px;
+    height: 100%;
+    float: left;
+    background-color: green;
+  }
+  .topnews{
+    width: 513px;
+    height: 132px;
+    background-color: yellow;
+  }
+  .topnews h2{
+    margin: 0;
+    height: 32px;
+    overflow: hidden;
+    display: block;
+    color: red;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    letter-spacing: -2px;
+  }
+  .topnews p {
+    height: 54px;
+    overflow: hidden;
+    margin: 3px 0 5px 170px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "굴림";
+  }
+  .topnews img{
+    float:left;
+  }
+  .topnews ul li{
+    font-size:12px;
+    font-family: "굴림";
+    font-weight: bold;
+    padding: 0;
+    margin: 0 0 0 170px;
+  }
+
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="wrap">
+      <div class="leftnews">
+        <div class="topnews">
+          <h2>SKT·BMW, 세계 최초 5G 커넥티드카 시연</h2>
+          <img width="160" height="94" src="http://static.naver.net/newsstand/2016/1116/etnews/150157/001.jpg" alt="뉴스 이미지"/ >
+          <p> 5세대(5G) 이동통신망으로 각종 사고와 교통 정체 등 도로 상황을 0.1초 만에 인식하고 UHD급 영상으로 실시간 전송하는 커넥티드카가 세계 최초로 시동을 걸었다. SK텔레...</p>
+          <ul>
+            <li>[이슈분석]커넥티드카 `가속 중`</li>
+            <li>[이슈분석]미래 자동차엔 왜 5G가 필요한가</li>
+          </ul>
+        </div>
+      </div>
+      <div class="rightnews"></div>
+    </div>
+  </div>
+
+</body>
+</html>
