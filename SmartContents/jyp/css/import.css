@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+ul {
+  list-style: none;
+}
+body {
+  margin: 0;
+  background-image: url("http://wondergirls.jype.com/images/bg-pc.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center 0;
+}
+header {
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0 20px;
+  box-shadow: 0 2px 10px #666;
+}
+header h1 {
+  background-image: url("http://wondergirls.jype.com/images/logo-s.png");
+  width: 104px;
+  height: 52px;
+  float: left;
+}
+header nav {
+  float: right;
+}
+header nav li {
+  float: left;
+  height: 100px;
+  line-height: 100px;
+}
+header nav li a {
+  padding: 0 18px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #F28195;
+}
+@media screen and (max-width: 769px) {
+  body {
+    background-image: url("http://wondergirls.jype.com/images/bg-720.jpg");
+    background-position: center center;
+  }
+}

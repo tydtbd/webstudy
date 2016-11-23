@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>전자신문</title>
+  <style>
+  .box{
+    width: 900px;
+    height: 540px;
+    margin: 0 auto;
+    border: 2px #F00 solid;
+    position: relative;
+  }
+  .wrap{
+    width: 840px;
+    height: 380px;
+    position: relative;
+    margin: 15px auto;
+    border: 1px blue solid;
+  }
+  .rightnews{
+    width: 307px;
+    height: 100%;
+    border: 1px yellow solid;
+    float: right;
+  }
+  .leftnews{
+    width: 513px;
+    height: 100%;
+    float: left;
+    border: 3px orange solid;
+  }
+  .topnews{ width: 513px; height: 132px; border: 1px #00f solid;}
+  .topnews h2{
+    margin: 0;
+    height: 32px;
+    overflow: hidden;
+    display: block;
+    color: red;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: bold;
+    letter-spacing: -2px;
+  }
+  .topnews p {
+    height: 54px;
+    overflow: hidden;
+    margin: 3px 0 5px 170px;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: "굴림";
+  }
+  .topnews img{
+    float:left;
+  }
+  .topnews ul {
+    font-size:12px;
+    font-family: "굴림";
+    font-weight: bold;
+    padding: 0;
+    margin: 3px 0 5px 190px
+  }
+  .subnews{
+    width: 162px;
+    height: 245px;
+    border: 1px #F00 solid;
+    font-size: 11px;
+  }
+  .subnews img{ border: 1px #F00 solid; margin-left: 10%; padding: 0; }
+  .subnews p{ margin:0 10px;}
+  .sublist{ border: 1px #F00 solid; width: 351px; height: 244px; float: right;}
+  .sublist ul{ list-style:none;
+               font-size: 14px;
+               font-family: "돋움";
+               margin: 10px 10px;
+               line-height: 25px;
+               padding: 0;
+  }
+  .issue{
+    width: 307px;
+    height: 112px;
+    border: 1px #000000 solid;
+  }
+  .issue h3{ margin: 0px 15px; }
+  .issue ul{ font: normal 11px/14px Dotum,"돋움"; line-height: 20px;}
+  .today{
+    width: 307px;
+    height: 70%;
+    background-color: #ffffff;
+    font-size: 11px;
+    overflow: hidden;
+  }
+  .todayphoto{
+    width: 146px;
+    height: 100%;
+    border: 1px #F00 solid;
+  }
+  .todayphoto img{
+    width:146px;
+    height: 95px;
+  }
+  .todayphoto p{ margin: 0 0px;}
+  .todaynews{
+    width: 146px;
+    height: 100%;
+    border: 1px #F00 solid;
+    float: right;
+  }
+  .todaynews img{
+    width: 146px;
+    height: 95px;
+  }
+  .todaynews p{ margin: 0 0px;}
+  .menu{
+    width: 840px;
+    height: 111px;
+    border: 1px #f00 solid;
+    margin: 0px auto;
+  }
+  .menu span{
+    float: left;
+  }
+  .menu p{
+   float: right;
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="menu">
+      <span><img width="260"height="55"src="http://static.naver.net/newsstand/up/2013/0813/nsd114836462.gif" alt=""></span>
+      <p><img width="468"height="60" src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01475642087174.jpg" alt=""></p>
+    </div>
+    <div class="wrap">
+      <div class="leftnews">
+        <div class="topnews">
+          <h2>SKT·BMW, 세계 최초 5G 커넥티드카 시연</h2>
+          <img width="160" height="94" src="http://static.naver.net/newsstand/2016/1116/etnews/150157/001.jpg" alt="뉴스 이미지"/ >
+          <p> 5세대(5G) 이동통신망으로 각종 사고와 교통 정체 등 도로 상황을 0.1초 만에 인식하고 UHD급 영상으로 실시간 전송하는 커넥티드카가 세계 최초로 시동을 걸었다. SK텔레...</p>
+            <ul>
+              <li>[이슈분석]커넥티드카 `가속 중`</li>
+              <li>[이슈분석]미래 자동차엔 왜 5G가 필요한가</li>
+            </ul>
+        </div>
+        <div class="sublist">
+          <ul>
+            <li>삼성, 문자메시지 기술기업 '뉴넷캐나다' 인수</li>
+            <li>광고없는 '유튜브레드'…구글뮤직 없이 홀로 출시</li>
+            <li>제이앤티씨, 베트남공장 가동..."2020년 매출 1조"</li>
+            <li>11번가, '110분 이내 무료배송' 프로모션 선보여</li>
+            <li>朴대통령, 檢조사 미루기 논란…이르면 내주 '특검정</li>
+            <li>수도권서 경유차는 저공해차로 인정 안된다</li>
+            <li>한국형전투기에 국산 SW통합관리솔루션 첫 적용</li>
+            <li>[카드뉴스]미션:아스가르디아 '우주 국가'를 세워라</li>
+            <li>"아이가 채소를 싫어하는 이유는 색깔 때문"</li>
+          </ul>
+        </div>
+         <div class="subnews">
+           <img  width="126" height="78" src="http://static.naver.net/newsstand/2016/1117/etnews/094053/002.jpg" alt="애플" />
+           <p>애플, 최신 제품은 25만원 짜리 포토북</p>
+           <img  width="126" height="78" src="http://static.naver.net/newsstand/2016/1117/etnews/094053/003.jpg" alt="청와대" />
+           <p>정부, 오늘부터 '대포폰' 직권해지</p>
+         </div>
+      </div>
+      <div class="rightnews">
+        <div class="issue">
+          <h3>이슈분석</h3>
+          <ul>
+            <li>붕괴된 의료전달체계, 대형병원 쏠림 `속수무책`</li>
+            <li>수도권-지방 격차 못 좁힌 창조경제혁신센터…대</li>
+            <li>최순실 직격탄 창조경제혁신센터, 탈출구는 어디</li>
+          </ul>
+        </div>
+         <div class="today">
+           <div class="todaynews">
+             <img src="http://static.naver.net/newsstand/2016/1117/etnews/142250/006.jpg" alt="" />
+              <p>3800년 전 이집트 벽화에 숨은 비밀</p>
+              <img src="http://static.naver.net/newsstand/2016/1117/etnews/170750/007.jpg" alt="">
+              <p>탱크로봇 전쟁터로···이라크, 모술에 배치</p>
+           </div>
+           <div class="todayphoto">
+          <img src="http://static.naver.net/newsstand/2016/1117/etnews/142250/004.jpg" alt="" />
+            <p>中 "세계 최초 더블M형 스마트 무인함정 개발"</p>
+          <img src="http://static.naver.net/newsstand/2016/1117/etnews/142250/005.jpg" alt="" />
+            <p>830만년전엔…냥이 몸무게가 404㎏</p>
+           </div>
+
+         </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
