@@ -1,6 +1,6 @@
 *{margin:0; padding:0;}
 html,body{height:100%}
-
+a{text-decoration: none;}
 
 ul{list-style:none;}
 
@@ -29,12 +29,22 @@ header{
             float:left;
             height:100px;
             line-height:100px;
+            &:hover{
+              background-color:rgba(255,255,255,.7)
+            }
             a{
+                display: block;
                 padding:0 18px;
                 text-decoration: none;
                 font-size:16px;
                 color:@text-color;
+                transition: .1s;
+                font-weight: bold inherit;
+                &:hover{
+                   border-top:2px @text-color solid;
+                }
             }
+
         }
     }
 
