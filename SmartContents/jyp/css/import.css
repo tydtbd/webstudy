@@ -27,13 +27,35 @@ header {
   box-shadow: 0 2px 10px #666;
 }
 header h1 {
+  float: left;
+}
+header h1 a {
+  display: block;
   background-image: url("http://wondergirls.jype.com/images/logo-s.png");
   width: 104px;
   height: 52px;
-  float: left;
+  text-indent: -9999px;
+  font-size: 0;
+  transition: 1s;
+  margin: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header h1 a:hover {
+  transform: rotateY(180deg);
 }
 header nav {
   float: right;
+}
+header nav .menu {
+  display: none;
+  height: 55px;
+  width: 200px;
+  background-color: #F28195;
+  margin-right: -20px;
+  line-height: 55px;
+  text-align: center;
+  color: #FFF;
 }
 header nav li {
   float: left;
@@ -54,10 +76,55 @@ header nav li a {
 }
 header nav li a:hover {
   border-top: 2px #F28195 solid;
+  color: #f4c22d;
+}
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 57px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.bottom a {
+  position: relative;
+  display: block;
+  width: 115px;
+  height: 45px;
+  text-indent: -9999px;
+  top: 5px;
+  left: 7%;
+  float: left;
+  background-image: url(http://missa.jype.com/images/jyplogo-b.png);
 }
 @media screen and (max-width: 769px) {
   body {
     background-image: url("http://wondergirls.jype.com/images/bg-720.jpg");
     background-position: center center;
+  }
+  header {
+    height: 55px;
+  }
+  header nav .menu {
+    display: block;
+  }
+  header nav ul {
+    width: 200px;
+    position: absolute;
+    display: none;
+  }
+  header nav ul li {
+    float: none;
+    border: 1px #F00 solid;
+    display: block;
+    height: 55px;
+    line-height: 55px;
+  }
+  header nav ul li a {
+    transition: .1s;
+    border-left: 0px #f4c22d solid;
+  }
+  header nav ul li a:hover {
+    border-top: 0;
+    border-left: 5px #f4c22d solid;
   }
 }
