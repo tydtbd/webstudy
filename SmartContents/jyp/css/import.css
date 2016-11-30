@@ -128,3 +128,170 @@ footer {
     border-left: 5px #f4c22d solid;
   }
 }
+body.noneBg {
+  background: none;
+}
+section > .title {
+  margin-bottom: 50px;
+  height: 60px;
+  padding: 30px 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  text-transform: capitalize;
+  text-indent: -99999px;
+  font-size: 0;
+}
+section > .title h2 {
+  width: 360px;
+  height: 51px;
+  margin: 0 auto;
+}
+section.disco .title h2 {
+  background-image: url(http://wondergirls.jype.com/images/title-discography.png);
+  background-repeat: no-repeat;
+}
+section.disco .btn-global {
+  width: 1000px;
+  margin: 0 auto;
+  height: 21px;
+  margin-bottom: 5px;
+}
+section.disco .btn-global a {
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #000;
+  color: #FFF;
+  font-size: 11px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  vertical-align: top;
+  line-height: 20px;
+}
+section.disco .wrap {
+  margin: 0 auto 100px;
+  max-width: 1000px;
+  border: 1px #F00 solid;
+}
+section.disco .wrap .album-thumb,
+section.disco .wrap .album-contents {
+  border: 1px #F00 solid;
+  display: table-cell;
+}
+section.disco .wrap .album-thumb {
+  width: 35.2%;
+}
+section.disco .wrap .album-thumb > img {
+  width: 100%;
+}
+section.disco .wrap .album-thumb h2 {
+  font-size: 12px;
+}
+section.disco .wrap .album-thumb ol {
+  list-style-position: inside;
+}
+section.disco .wrap .album-contents {
+  vertical-align: top;
+  padding-left: 28px;
+}
+section.disco .wrap .album-contents strong {
+  float: left;
+}
+section.disco .wrap .album-contents span {
+  float: right;
+  font-size: 12px;
+}
+section.disco .wrap .album-contents .title {
+  height: 58px;
+  border: 1px #F00 solid;
+  background-image: url(http://wondergirls.jype.com/images/discography/a-titlebg.png);
+  margin-bottom: 50px;
+  text-transform: capitalize;
+  color: #FFF;
+  font-size: 1.5em;
+  line-height: 50px;
+  padding: 0 20px;
+}
+section.disco .wrap .album-list {
+  margin-top: 30px;
+  text-align: center;
+}
+section.disco .wrap .album-list .list-btn a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCC;
+  display: inline-block;
+}
+section.disco .wrap .album-list li {
+  vertical-align: top;
+  display: inline-block;
+}
+section.disco .wrap .album-list li .description {
+  display: block;
+}
+section.disco .wrap .album-list li .description span {
+  display: block;
+}
+section.notice h2 {
+  background-image: url(http://wondergirls.jype.com/images/title-noti.png);
+}
+section.notice .list {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px #F00 solid;
+}
+section.notice .list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+section.notice .list table thead {
+  visibility: hidden;
+}
+section.notice .list table td,
+section.notice .list table th {
+  border-bottom: 1px #000 solid;
+  padding: 4px 0;
+}
+section.notice .list table tr > td:first-child {
+  text-align: center;
+}
+section.notice .list table tr > td:nth-child(3) {
+  text-align: center;
+}
+section.notice .list table td[colspan="3"] div {
+  padding: 40px;
+}
+section.notice .list table .elip {
+  width: 400px;
+  border: 1px #F00 solid;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+section.gallery h2 {
+  background-image: url(http://wondergirls.jype.com/images/title-gallery.png);
+}
+section.gallery .grid-list {
+  max-width: 769px;
+  border: 1px #F00 solid;
+  margin: 0 auto;
+  overflow: hidden;
+}
+section.gallery .grid-list ul {
+  overflow: hidden;
+  outline: 1px #00F solid;
+}
+section.gallery .grid-list ul li {
+  width: 20%;
+  max-width: 153px;
+  float: left;
+}
+section.gallery .grid-list ul li img {
+  max-width: 150px;
+  width: 100%;
+  margin-bottom: 5px;
+  vertical-align: top;
+}

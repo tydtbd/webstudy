@@ -1,0 +1,35 @@
+section.notice{
+  h2{
+    background-image: url(http://wondergirls.jype.com/images/title-noti.png);
+  }
+  .list{width: 1000px; margin: 0 auto; border: 1px #F00 solid;
+    table{
+            width:100%;
+
+            border-collapse: collapse;
+            thead{
+                visibility: hidden;
+            }
+            td,th{
+                border-bottom:1px #000 solid;
+                padding:4px 0;
+            }
+            tr>td:first-child{
+                text-align:center;
+            }
+            tr>td:nth-child(3){
+                text-align:center;
+            }
+            td[colspan="3"] div{padding:40px;}
+            .elip{
+                width:400px;
+                border:1px #F00 solid;
+                display:block;
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+            }
+        }
+  }
+
+}

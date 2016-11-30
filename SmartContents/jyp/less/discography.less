@@ -1,7 +1,7 @@
 body.noneBg{
   background: none;
 }
-section.disco{
+section{
   >.title{margin-bottom: 50px;
           height: 60px;
           padding: 30px 0;
@@ -13,17 +13,22 @@ section.disco{
               h2{
               width: 360px;
               height: 51px;
-              background-image: url(http://wondergirls.jype.com/images/title-discography.png);
-              background-repeat: no-repeat;
               margin: 0 auto;
           }
         }
+      }
+
+section.disco{
+        .title h2{
+                  background-image: url(http://wondergirls.jype.com/images/title-discography.png);
+                  background-repeat: no-repeat;
+                }
         .btn-global{
-          width: 1000px;
-          margin: 0 auto;
-          height: 21px;
-          border: 1px #00F solid;
-          a{ text-align: center;
+            width: 1000px;
+            margin: 0 auto;
+            height: 21px;
+            margin-bottom: 5px;
+             a{ text-align: center;
              text-transform:uppercase;
              display: inline-block;
              background-color: #000;
@@ -37,6 +42,60 @@ section.disco{
           }
         }
         .wrap{
-
+               margin: 0 auto 100px;
+               max-width:1000px;
+               border:1px #F00 solid;
+        .album-thumb,.album-contents{
+               border:1px #F00 solid;
+               display:table-cell;
         }
-      }
+       .album-thumb{
+           width:35.2%;
+           >img{width:100%;}
+           h2{font-size: 12px;}
+           ol{list-style-position:inside;}
+          }
+       .album-contents{
+         vertical-align: top;
+         padding-left:28px;
+         strong{float:left;}
+         span{float:right;
+             font-size:12px;
+         }
+         .title{
+             height:58px;
+             border:1px #F00 solid;
+             background-image: url(http://wondergirls.jype.com/images/discography/a-titlebg.png);
+             margin-bottom:50px;
+             text-transform:capitalize;
+             color:#FFF;
+             font-size:1.5em;
+             line-height:50px;
+             padding:0 20px;
+         }
+       }
+       .album-list{
+           margin-top:30px;
+           text-align:center;
+
+           .list-btn a{
+               width:10px;
+               height:10px;
+               border-radius:50%;
+               background-color: #CCC;
+               display:inline-block;
+           }
+
+           li{
+               vertical-align:top;
+               display:inline-block;
+               .description{
+                 display:block;
+                   span{display:block;}
+               }
+
+           }
+       }
+
+   }
+}
