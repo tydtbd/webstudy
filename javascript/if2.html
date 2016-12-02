@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>if2</title>
+  <script type="text/javascript">
+
+      //  var score = prompt("점수를 입력하세요");
+       //
+      //  if(score >=0 && score < 19){
+      //    alert("가")
+      //  }
+      //  if(score >=20 && score <39){
+      //    alert("양")
+      //  }
+      //  if(score >=40 && score <59){
+      //    alert("미")
+      //  }
+      //  if(score >=60 && score <79){
+      //    alert("우")
+      //  }
+      //  if(score >=80 && score <100){
+      //    alert("수")
+      //  }
+
+
+
+      // push는 입력한순서대로 unshift는 입력한반대순서대로
+      // confirm 은 입력값이없는 출력형태이다.
+       var nameArr = [];
+       var scoreArr = [];
+
+       var max_user = prompt('학생의 수를 입력해주세요');
+       var check = confirm(max_user+"인원이 맞습니까?")
+        console.log("총학생의 인원수는"+" "+max_user+"명"  +" 입니다");
+
+       if(check){
+
+           for(var i=0;i<max_user;i++){
+           var name = prompt('이름을입력하세요');
+           var score = prompt('점수를입력하세요');
+           nameArr.unshift(name);
+           scoreArr.unshift(score);
+       }
+
+       document.write(nameArr + "<br />" +scoreArr + "<br />")
+       var nexts = confirm('입력정보가 맞습니까?');
+
+       if(nexts){
+           console.log('반 전체 평균을 산출합니다.')
+           var score = 0;
+
+            for(i=0;i<scoreArr.length;i++){
+
+                score += Number(scoreArr[i]);
+
+               }
+           document.write('반 전체 평균은'+" "+score/max_user+"점 입니다"+"<br />")
+           console.log("total:"+score)
+
+           console.log(nameArr,scoreArr)
+           document.write(nameArr[0]+"의"+ "<br />")
+           if(score/max_user >=0 && score/max_user < 20){
+             document.write("성적등급:"+"가")
+           }
+           if(score/max_user >=21 && score/max_user < 40){
+             document.write("성적등급:"+"양")
+           }
+           if(score/max_user >=41 && score/max_user < 60){
+             document.write("성적등급:"+"미")
+           }
+           if(score/max_user >=61 && score/max_user < 80){
+             document.write("성적등급:"+"우")
+           }
+           if(score/max_user >=81 && score/max_user < 100){
+             document.write("성적등급:"+"수")
+           }
+
+
+
+
+       }else if(!nexts){
+           alert('프로그램을 종료합니다')
+       }
+
+
+
+       }else if(!check){
+       console.log('re');
+       }
+
+
+  </script>
+</head>
+<body>
+
+</body>
+</html>
