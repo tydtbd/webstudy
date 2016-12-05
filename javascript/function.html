@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>함수</title>
+  <script type="text/javascript">
+
+      //  function a(){
+      //    console.log("a")
+      //  }
+      //  function b(){
+      //    console.log("b")
+      //  }
+      //  function c(){
+      //    console.log("c")
+      //  }
+
+
+        var list = [[],[]];
+
+        function abc(){
+          var box = prompt("이름을 입력해주세요");
+          var box2 = prompt("점수를 입력해주세요");
+
+          list[0].unshift(box);
+          list[1].unshift(box2)
+
+          console.log(list)
+        }
+        function avg(){
+          var box = 0;
+          if(list[1].length == 0){
+            alert("점수랑 평균입력해")
+          }else{
+          for(i=0;i<list[1].length;i++){
+            box += Number(list[1][i]);
+          }
+          var avg = box/list[1].length
+          console.log(avg)
+          // console.log(box/list[1].length)
+        }
+        }
+
+
+  </script>
+</head>
+<body>
+  <button type="button" onclick="abc()">학생추가</button>
+  <button type="button" onclick="avg()">평균내기</button>
+
+
+  <!--
+  <button type="button" onclick="a()">첫번째</button>
+  <button type="button" onclick="b()">두번째</button>
+  <button type="button" onclick="c()">세번째</button>
+   -->
+
+</bdoy>
+</html>
