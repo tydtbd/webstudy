@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>객체카드</title>
+  <script type="text/javascript">
+     var card = {
+         card_number:13,
+         card_deck:[],
+         shape:['♠','♣','♥','◆'],
+         theorem:function(){
+
+               for(var i=0 in this.shape){
+                   console.log(i)
+                   for(var j=0; j < this.card_number; j++){
+                   console.log(j)
+            }
+        }
+    }
+}
+
+
+
+
+  </script>
+</head>
+<body>
+   <button type="button" onclick="card.theorem()">카드생성</button>
+</body>
+</html>
