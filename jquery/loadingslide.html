@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  //문서가 준비되면 실행해!
+
+  // var tt = function(i,e){
+  //     console.log("ready: "+$(e).height())
+  // }
+
+  // $('body img').each(tt)
+})
+
+$(window).load(function(){
+  $('.loadding').hide(3000)
+  //문서가 완료 되면 실행해!
+
+  // var tt = function(i,e){
+  //     console.log("load: "+$(e).height())
+  // }
+
+  // $('body img').each(tt)
+})
+  </script>
+  <style>
+  *{margin:0; padding:0;}
+     ul{list-style:none;}
+
+     .slide{border:1px #F00 solid; width:600px; height:300px; margin:0 auto; position:relative;}
+     .slide button{position:absolute; top:50%;width:30px; height:40px;}
+     .slide button.next{left:-50px;}
+     .slide button.prev{right:-50px;}
+     .slide .view{text-align:center; position:relative;  height:300px; overflow:hidden;}
+     .slide li {display:inline-block;}
+     .slide li.on a{background-color: #F00;}
+     .slide li a{position:relative; top:250px; z-index:1; display:block; width:20px; height:20px; line-height:20px; border:1px #FFF solid; color:#FFF; text-decoration:none;}
+     .slide li:first-child div{display:block; }
+     .slide li div{position:absolute; width:100%;left:0; top:0; display:none;}
+     .slide li div img{width:100%;}
+     img{width: 100%;}
+     .loadding{width: 100px;height: 100px;background-color: #FFF; margin: 0 auto;}
+     .loadding img{width: 50px; height: 50px; margin: 0 auto;}
+
+
+     #slide { width: 500px; height: 500px; margin: 0 auto; border: 1px #F00 solid;}
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <div class="loadding"><img src="img/load.gif"></div>
+ <img src="img/a.jpg">
+ <img src="img/b.jpg">
+ <img src="img/c.jpg">
+ <img src="img/d.jpg">
+
+ <div id="slide">
+   <p>asdfasdfasdfasdf</p>
+   <p>asdfasdfasdfasdf</p>
+ </div>
+
+
+
+
+ <!--<div class="slide">
+     <div class="btngroup">
+             <button class="next">다음</button>
+             <button class="prev">이전</button>
+     </div>
+
+     <div class="view">
+         <ul>
+             <li class="on">
+                 <a href="">1</a>
+                 <div><img src="../img/a.jpg"></div>
+             </li>
+             <li>
+                 <a href="">2</a>
+                 <div><img src="../img/b.jpg"></div>
+             </li>
+             <li>
+                 <a href="">3</a>
+                 <div><img src="../img/c.jpg"></div>
+             </li>
+             <li>
+                 <a href="">4</a>
+                 <div><img src="../img/d.jpg"></div>
+             </li>
+         </ul>
+     </div>
+
+ </div>
+ -->
+
+
+</body>
+</html>

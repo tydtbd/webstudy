@@ -14,11 +14,11 @@
 		</style>
 		<script>
 			$(document).ready(function(){
-				
+				$("#wrapper > ul > li:eq(2) > ul" ).append('<li class="newEl">3-5</li>')
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<span>append()메서드를 사용하여 표시된 부분 아래에 3-5엘리먼트(클래스 newEl을 적용)를 추가시켜 주세요.</span>
 		<div id="wrapper">
@@ -31,7 +31,7 @@
 						<li>3-2</li>
 						<li>3-3</li>
 						<li>3-4 ( 아래에 3-5을 채워주세요. )</li>
-						
+
 					</ul>
 				</li>
 				<li>4</li>
