@@ -14,11 +14,11 @@
 		</style>
 		<script>
 			$(document).ready(function(){
-				
+				$('#list').append($("#list2 > li ").clone())
 			});
 		</script>
 	</head>
-	
+
 	<body>
 		<span>wrapper2의 내용을 복사해서 wrapper의 내용도 동일하게 만들어 주세요.</span>
 		<p><strong>wrapper</strong></p>
@@ -28,7 +28,7 @@
 			<li>2</li>
 			<li>3
 				<ul id="list">
-					
+
 				</ul>
 			</li>
 			<li>4</li>
