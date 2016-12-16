@@ -295,3 +295,40 @@ section.gallery .grid-list ul li img {
   margin-bottom: 5px;
   vertical-align: top;
 }
+section.video h2 {
+  background-image: url(http://wondergirls.jype.com/images/title-video.png);
+}
+section.video .list {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px #F00 solid;
+}
+section.video .list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+section.video .list table thead {
+  visibility: hidden;
+}
+section.video .list table td,
+section.video .list table th {
+  border-bottom: 1px #000 solid;
+  padding: 4px 0;
+}
+section.video .list table tr > td:first-child {
+  text-align: center;
+}
+section.video .list table tr > td:nth-child(3) {
+  text-align: center;
+}
+section.video .list table td[colspan="3"] div {
+  padding: 40px;
+}
+section.video .list table .elip {
+  width: 400px;
+  border: 1px #F00 solid;
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
