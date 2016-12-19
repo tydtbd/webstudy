@@ -6,10 +6,10 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
  $(document).ready(function(){
 
 
- $("#hover").mouseover(function(){
-   $("#hover").css("background-color","red").text("A. Hover Menu").css("color","#FFF")
+ $("nav ul li").mouseover(function(){
+   $(this).css("background-color","red").children("a").css("color","#FFF")
  }),
- $("#hover").mouseout(function(){
-   $("#hover").css("background-color","#ccc").text("A. Hover Menu").css("color","#000")
+ $("nav ul li").mouseout(function(){
+   $(this).css("background-color","#ccc").children("a").css("color","#000")
  })
  })
