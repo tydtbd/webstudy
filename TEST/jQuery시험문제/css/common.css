@@ -50,3 +50,12 @@ div.content>section>div>ol{list-style-position:inside; font-size:14px; line-heig
 .popde p{margin:10px 0; font-size:12px;}
 .popwrap{top:0;}
 .popwrap .close{position:absolute; right:0; top:0}
+.btngroup div{border: 1px #F00 solid;
+              width: 400px;
+              height: 350px;
+              position: absolute;
+              top: 0;
+              left: 50%;
+              margin-left: -200px;
+              background: #FFF;
+              display: none;}

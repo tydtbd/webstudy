@@ -144,15 +144,31 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 
 
   //  Layout Popup
+
    $(".btngroup button").click(function(){
-     var ttt = $(this).index();
-     
+     $(".btngroup div").fadeIn();
 
 
+     //
+    //  $(".open").click(function(){
+    //    $(".pop").fadeIn();
+    //    bl()
+     //
+    //    // $("body").prepend("<div class='bl'></div>")
+     //
+    //  })
+    //  $(".close").click(function(){
+    //    $(".pop").fadeOut();
+    //    $(".bl").remove()
+    //  })
+     function bl(){
+             $("body").prepend("<div class='bl'></div>")
+     }
 
 
 
    })
+
 
 
 
