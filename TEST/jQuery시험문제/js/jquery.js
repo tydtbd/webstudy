@@ -12,7 +12,7 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
  // $("nav ul li").mouseout(function(){
  //   $(this).css("background-color","#ccc").children("a").css("color","#000")
  // })
-  //
+
 
   // A. hover Menu 2안 & scroll
     var abc = function(){$(this).css("background","#F00")
@@ -36,7 +36,7 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
  // 스크롤 경미가 푼거
  // $('header nav li').click(function(){
  //   var idx = $(this).index();
- //   var scroll = $('.content section:eq('+idx+')').offset().top;
+ //   var scroll = $('.content section').eq(idx).offset().top;
  //    $('body,html').animate({
  //      scrollTop:scroll
  //    });
@@ -79,9 +79,26 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
        idx++
        if(idx == $(".slidebanner ul li").length){
          idx = 0;
-
+         $(".slidebanner ul li").eq(idx).addClass("on").find("img")
+         .css({"left":move,"display":"block"}).animate({"left":0})
        }
-     })
+     });
+
+     $(".slidebanner .prev").click(function(){
+       var move = $(".slidebanner").width()
+
+       $(".slidebanner ul li").eq(idx).find("img").animate({"left":move})
+       .parent().prev().find("img").css({"left":-move,"display":"block"})
+       .animate({"left":0})
+       idx++
+       if(idx == $(".slidebanner ul li").length){
+         idx = 0;
+         $(".slidebanner ul li").eq(idx).addClass("on").find("img")
+         .css({"left":-move,"display":"block"}).animate({"left":0})
+       }
+     });
+
+
    }
  }
 
@@ -146,29 +163,18 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
   //  Layout Popup
 
    $(".btngroup button").click(function(){
-     $(".btngroup div").fadeIn();
+    abc()
+    $(this).next("div").css({
+      "width":"300px",
+      "height":"300px",
+      "border":"1px #F00 solid",
+      "display":"block",
+      "position":"absolute",
+      "left":"0"
+    }).show()
 
-
-     //
-    //  $(".open").click(function(){
-    //    $(".pop").fadeIn();
-    //    bl()
-     //
-    //    // $("body").prepend("<div class='bl'></div>")
-     //
-    //  })
-    //  $(".close").click(function(){
-    //    $(".pop").fadeOut();
-    //    $(".bl").remove()
-    //  })
-     function bl(){
-             $("body").prepend("<div class='bl'></div>")
-     }
-
-
-
-   })
-
+  $("body").fadeTo("slow",0.9)
+  })
 
 
 

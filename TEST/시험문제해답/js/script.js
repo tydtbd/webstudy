@@ -193,12 +193,12 @@ $(function(){
 
 
 	//popup
-	var event1 = $('.event1').html()
+	var event1 = $('.event1').html() // 선택한 .event1 요소에 하위 요소들을 불러옵니다
 	var event2 = $('.event2').html()
 	var event3 = $('.event3').html()
 	var event4 = $('.event4').html()
 
-	$('.pop').remove()
+	$('.pop').remove() // 선택한 .pop 요소를 삭제합니다
 
 	$('.btngroup .btnevent1').click(function(){
 		blaind()
@@ -222,7 +222,7 @@ $(function(){
 
 	function blaind(){
 		$('body').append('<div class="blaind"></div>').find(".blaind").fadeTo(500,0.8)
-	}
+	}   // .append는
 
 
 
