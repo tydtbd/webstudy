@@ -46,7 +46,7 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 
  // 슬라이드 배너
  var idx = 0
- 
+
  // var slide = {
  //     Event:function(){
  //         $('.slidebanner .next').click(function(){ //  슬라이드배너 안에 클래스명이 넥스트인 버튼을 클릭할때
@@ -85,7 +85,7 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
      });
 
      $(".slidebanner .prev").click(function(){
-       var movie = $(".slidebanner").width()
+       var move = $(".slidebanner").width()
 
        $(".slidebanner ul li").eq(idx).find("img").animate({"left":move})
        .parent().prev().find("img").css({"left":-move,"display":"block"})
