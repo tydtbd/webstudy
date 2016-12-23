@@ -45,7 +45,7 @@ $(function(){
 
 
 	//슬라이드 베너
-	var st = $('.slidebanner li');
+	var st = $('.slidebanner li'); // 슬라이드배너 안에 모든 엘아이
 	var stIdx = Math.floor(Math.random()*st.length);
 	var hisnum = null;
 	var stimg = null;
