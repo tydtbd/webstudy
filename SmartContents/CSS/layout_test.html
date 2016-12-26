@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body, html { margin:0px; padding:0px; font-family:"NanumGothic"; }
+ul, li, dl, dt, dd { list-style:none; margin:0px; padding:0px; }
+h1, h2, h3, h4, h5, h6 { margin:0px; padding:0px; }
+a { text-decoration:none; color:#000; }
+a:hover { text-decoration:underline; }
+#wrapper { width:900px; margin:0px auto; }
+#header { position:relative; width:900px; height:110px; margin-bottom:20px; border-bottom:3px solid #545454; }
+#header h1 { padding:10px 0px 6px; }
+#header li { float:left; }
+#header li a { display:inline-block; height:22px; font-size:12px; font-weight:bold; line-height:22px; text-align:center; border:1px solid #CCC; padding:0px 10px; border-radius:3px; color:#444; margin-right:4px; }
+#header li a:hover { text-decoration:none; border:1px solid #d91b5c; color:#FFF; background:#d91b5c; }
+#header li span { font-size:12px; color:#444; margin-left:6px; }
+#header img.banner { position:absolute; right:0px; bottom:10px; }
+#contents { overflow:hidden; background:#fff; }
+/* left 뉴스 */
+.left_news { float:left; width:520px; margin-right:20px; }
+.top_news:after { display:block; clear:both; content:""; }
+.top_news h2 { margin-bottom:8px; }
+.top_news h2 a { font-weight:bold; font-size:24px; color:#d91b5c; }
+.top_news dt { float:left; height:94px; margin-right:10px; }
+.top_news dd { font-size:12px; color:#000; font-weight:bold; line-height:17px;  }
+.top_news dd:nth-child(2) { color:#7a7a7a; font-weight:normal; padding-bottom:10px; }
+.sidenews { float:left; width:162px; border-top:2px solid #d91b5c; padding:10px 0px; margin-top:10px; }
+.sidenews h2 { width:124px; font-size:11px; }
+.sidenews li { width:124px; margin:0px auto; }
+.sidenews li:first-child { margin-bottom:10px; }
+.sidelist { border-top:2px solid #dcdcdc; margin-top:10px; margin-left:162px; padding:10px; }
+.sidelist a { font-size:14px; line-height:30px; }
+.sidelist a:hover { color:#d91b5c; }
+/* right 뉴스*/
+.right_news { background:yellowgreen; margin-left:540px; }
+.issue h3 { width:346px; height:30px; padding-left:14px; font-size:14px; line-height:30px; font-weight:bold; color:#FFF; background:#444; }
+.issue ul { border:1px solid #e3e3e3; border-top:0px; background:#fafafa; padding:8px 14px; }
+.issue li a { font-size:12px; line-height:24px; }
+.photonews { margin-top:10px; }
+.photonews h2 { width:170px; font-size:12px; }
+.photonews li { float:left; }
+.photonews li:nth-child(odd) { margin-right:20px; }
+.photonews li:nth-child(1), .photonews li:nth-child(2) { margin-bottom:10px; }
+</style>
+</head>
+<body>
+
+
+<div id="wrapper">
+
+    <div id="header">
+        <h1><a href=""><img src="http://static.naver.net/newsstand/up/2013/0813/nsd114836462.gif" width="260" height="55" alt="전자신문"></a></h1>
+        <ul>
+            <li><a href="">구독하기</a></li>
+            <li><a href="">이용자 한마디</a></li>
+            <li><a href="">공유하기</a></li>
+            <li><span>11-14 11:30편집</span></li>
+        </ul>
+        <a href=""><img class="banner" src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01475642087174.jpg" alt="상단 배너"></a>
+    </div>
+
+    <div id="contents">
+        <div class="left_news">
+            <div class="top_news">
+                <h2><a href="">"포켓몬고, 곧 한국 서비스 한다"</a></h2>
+                <dl>
+                    <dt><img width="160" height="94" src="http://static.naver.net/newsstand/2016/1114/etnews/113200/001.jpg" alt="top_photo"></dt>
+                    <dd><a href="">“포켓몬고 한국 서비스를 위해 분주하게 움직이고 있습니다. 곧 좋은 소식을 들려드릴 겁니다.” 포켓몬고 개발사 나이언틱랩스의 데니스 황(황정목) 아트총괄 이사는 “한국...</a></dd>
+                    <dd><a href="">세계 최초 증강현실폰 `팹2프로` 연내 국내 출시</a></dd>
+                    <dd><a href="">[ET단상]포켓몬고 자세히 보기-과학기술과 인문사회 융합의</a></dd>
+                </dl>
+            </div>
+            <ul class="sidenews">
+                <li>
+                    <a href=""><img width="124" height="76" src="http://static.naver.net/newsstand/2016/1114/etnews/113200/002.jpg" alt="sidenews_photo_1"></a>
+                    <h2><a href="">68년만에 가장 근접…14일 슈퍼문 뜬다</a></h2>
+                </li>
+                <li>
+                    <a href=""><img width="124" height="76" src="http://static.naver.net/newsstand/2016/1114/etnews/113200/003.jpg" alt="sidenews_photo_1"></a>
+                    <h2><a href="">[모션그래픽]만찢녀를 아시나요?</a></h2>
+                </li>
+            </ul>
+            <ul class="sidelist">
+                <li><a href="">삼성전자, '기어S3' 클래식·프론티어 국내 출시</a></li>
+                <li><a href="">한국정보인증, '클라우드 기반 생체인증 오픈플랫</a></li>
+                <li><a href="">LGD, 일본 TV업체에 OLED 패널 공급한다</a></li>
+                <li><a href="">[카드뉴스]“잠비아 사람들이 허니버터칩을 산다고?”</a></li>
+                <li><a href="">박 대통령, 검찰 조사 앞두고 15일 추미애 만난다</a></li>
+                <li><a href="">전기차 최대 7대 동시 충전…'개방형 충전소' 오픈</a></li>
+                <li><a href="">지구와 닮은 '프록시마 b'에는 바다가 있다?!</a></li>
+                <li><a href="">남자보다 여자 기억력이 뛰어나다?</a></li>
+                <li><a href="">끔찍한 오류”…저커버그도 사망자 표시한 페북</a></li>
+            </ul>
+        </div>
+        <div class="right_news">
+            <div class="issue">
+                <h3>이슈분석</h3>
+                <ul>
+                    <li><a href="">美 금리인상 현실화…`빚` 뇌관 폭발을 막아라</a></li>
+                    <li><a href="">SK텔레콤 재판매 논쟁 재연···"동등결합과 시장지</a></li>
+                    <li><a href="">"편의점·주민센터가 물류 허브"...유통가, O2O `라스트 마일` 격전</a></li>
+                </ul>
+            </div>
+            <div class="photonews">
+                <ul>
+                    <li>
+                        <a href=""><img width="170" height="111" src="http://static.naver.net/newsstand/2016/1114/etnews/113200/004.jpg" alt="포토 뉴스"></a>
+                        <h2><a href="">830만년전엔…냥이 몸무게가 404㎏</a></h2>
+                    </li>
+                    <li>
+                        <a href=""><img width="170" height="111" src="http://static.naver.net/newsstand/2016/1114/etnews/113200/006.jpg" alt="포토 뉴스"></a>
+                        <h2><a href="">우주 국가가 비밀단체의 세계정복 의도?</a></h2>
+                    </li>
+                    <li>
+                        <a href=""><img width="170" height="111" src="http://static.naver.net/newsstand/2016/1114/etnews/113200/005.jpg" alt="포토 뉴스"></a>
+                        <h2><a href="">800년 전 이집트 벽화에 숨은 비밀</a></h2>
+                    </li>
+                    <li>
+                        <a href=""><img width="170" height="111" src="http://static.naver.net/newsstand/2016/1114/etnews/113200/007.jpg" alt="포토 뉴스"></a>
+                        <h2><a href="">애플, 숨기고 싶은 흑역사 6대 발명품</a></h2>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

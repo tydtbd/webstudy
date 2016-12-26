@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>사칙연산</title>
+  <script type="text/javascript">
+    function goAdd(){
+      var xx = document.myform.x.value;
+      var yy = document.myform.y.value;
+      var result = eval(xx)+eval(yy); //evar()연산이라고 인식하게해주는 함수
+                  // eval = 아스키코드를 숫자로 바꿔주는 함수
+      alert(result);
+    }
+  </script>
+
+</head>
+<body>
+  <form name="myform" action="get">
+   사칙연산<br/><br/>
+x:<input type="text" name="x"><br/>
+y:<input type="text" name="y"><br/>
+
+ <input type="button" value="+" onclick="goAdd()">
+ </form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+body { margin:0px; padding:0px; background-color:yellowgreen; }
+.box { width:600px; height:600px; border:2px solid #000; margin:0px auto; transition:1s; font-size:72px; }
+@media screen and (max-width:1024px) {
+    body { background-color:#F00; }
+    .box { width:500px; height:500px; }
+}
+@media screen and (max-width:720px) {
+    body { background-color:orange; }
+    .box { width:300px; height:300px; }
+}
+@media screen and (max-width:480px) {
+    body { background-color:purple; }
+    .box { width:200px; height:200px; }
+}
+</style>
+</head>
+<body>
+
+<div class="box">텍스트</div>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+/*
+div, ul, li { border:1px solid red; }
+.menu { border:1px solid red; }
+#unit1 { border:1px solid blue; }
+.menu > ul > li { border:1px solid red; }
+.menu .testul > li { border:1px solid red; }
+.menu ul.subul { border:1px solid red; }
+.menu ul.subul.list-item { border:1px solid blue; }
+.menu li li:first-child { border:1px solid red; } IE 7,8,9 다 먹음
+.menu li li:last-child { border:1px solid blue; } IE 8,9 먹음 / IE 7 안먹음
+li input { border:1px solid red; }
+li input[type="text"] { border:1px solid blue; }
+a[href="네이버"] { border:1px solid pink; }
+-------- ^(시작하면), *(모든것, 포함되어있으면), $(끝나면) --------
+a[href^="라"] { border:1px solid pink; }
+a[href*="이코"] { border:1px solid red; }
+a[href$="스"] { border:1px solid blue; }
+.unit + li  { border:1px solid blue; } .unit 바로 다음에 있는 li만 선택
+.unit ~ li  { border:1px solid red; } .unit 다음에 있는 li를 모두 선택
+*/
+</style>
+</head>
+<body>
+
+
+
+<div class="menu">
+    <ul class="first-ul">
+        <li>text1
+            <ul class="subul">
+                <li>text1-1</li>
+                <li>text2-2</li>
+                <li class="unit">unit</li>
+                <li>text1-1</li>
+                <li>text2-2</li>
+                <li>text3-3</li>
+            </ul>
+        </li>
+        <li>
+            <a href="네이버">text2</a>
+            <ul class="subul list-item">
+                <li><input type="text"></li>
+                <li><input type="button" value="버튼"></li>
+                <li>text3-3</li>
+             </ul>
+        </li>
+        <li>
+            <a href="라이코스">text3</a>
+            <ul class="testul">
+                <li><input type="text"></li>
+                <li id="unit">unit</li>
+                <li>text3-3
+                    <ul class="testul1">
+                        <li><input type="text1"></li>
+                        <li id="unit1">text2-2</li>
+                        <li>text3-3</li>
+                        <li><input type="text1"></li>
+                        <li id="unit2">text2-2</li>
+                        <li>text3-3</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+
+
+</body>
+</html>

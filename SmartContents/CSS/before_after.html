@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+<style>
+html, body { height:100%; }
+.box { border:1px solid #F00; height:40%; text-align:center; }
+.box:before { content:""; display:inline-block; height:100%; vertical-align:middle; }
+.cell { display:inline-block; }
+/*
+<table, table-cell을 안썼는데도 vertical-align:middle;이 되는 이유>
+일단, vertical-align:middle은 길이가 가장 긴걸 기준으로 중앙정렬이 된다.
+body의 높이는 100%고, box의 높이는 body의 40%이다.
+그리고 box에 가상선택자를 써서 box안에서의 기준선을 잡아준다.
+즉, box는 body의 40%의 사이즈 이지만
+box안의 컨텐츠는 box의 높이를 100%로 잡을 수 있게!
+결국, cell은 box의 높이안에서 중앙정렬 되는것이다.
+*/
+</style>
+</head>
+<body>
+
+
+<div class="box">
+    <div class="cell">dfjldfjlsdkfjls<br />ㅇㄹㅇㄴㄹㅇ</div>
+</div>
+
+
+</body>
+</html>

@@ -1,51 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>text</title>
-       <style>
-           .box{
-             width: 400px;
-             height: 400px;
-             border: 1px #F00 solid;
-             font-size: 10px;
-             font-family: "돋움",sans-serif,Helvetica,Dotum,;
-             letter-spacing: -0.8px; word-spacing: 0px; word-break: keep-all;
-             line-height: 180%;
-           }
-           .box div{
-             color: red;
-             font-family: "궁서";
-             font-size: 15px;
-           }
-           .box p{
-             color: blue;
-             font-family: "궁서";
-             font-style: italic;
-             font-size: 15px;
-           }
-       </style>
+<meta charset="UTF-8">
+<title>text</title>
+<style>
+* { margin:0px; padding:0px; }
 
+.box { width:400px; height:400px; border:1px solid red; color:lightgray; font-size:16px; font-weight:bold; font-style:italic; font-family:Helvetica, Dotum,"돋움",AppleSDGothicNeo,sans-serif; /* 따옴표는 한글폰트 이거나, 폰트명에 띄어쓰기가 있을때 사용한다. 영문폰트가 앞에 있고 다음에 한글폰트 넣기 */ letter-spacing:-0.8px; word-spacing:2px; word-break:keep-all; /* keep-all은 단어전체가 break되는 것, break-all은 영역만큼 딱 잘라떨어트리는것 */ line-height:30px; /* line-height:100% 는 글자사이즈의 100%, 긴 글은 px가 아닌 %로 준다.(폰트가 작아지너가 커질 수 있기 때문에 값을 고정시키지 않고 %로 준다. 예를들어 게시글의 textarea 입력 폼), line-height값을 준 곳에 마진값을 주려고하면 line-height값도 계산해서 줘야한다. font-size:12px 이고 line-height:30px이다. 30-12=18px인데 여기서 9px은 글자 위, 나머지 9px은 글자 아래 위치한다. line-height는 오남용이 많다. 높이가 30px인 버튼을 만들때 line-height:30px;로 하면 중앙정렬되지만 그것보다 더 좋은 방법은 겉 껍데기를 display:table을 주고 텍스트가 있는 영역을 table-cell을 한다음에 vertical-align:middle을 주는 방법이다. 이 방법이 아니어도 만드는 방법은 여러가지~ */ }
+.box div { border:1px solid blue; }
+.box div a { color:inherit; } /* 상속받음 */
+.box div p { color:initial; } /* 상속받지 않음 */
 
+span { color:red; font-family:"돋움"; }
 
+</style>
 </head>
 <body>
-  <!--  .box div a{color:inherit 상속받음} / .box div a{color:inherit 상속받지않음 }-->
-  <!--  line-height 00px;는 줄간격-->
-  <div class="box">
-    <span>위키는 간단한 마크업 언어와 웹 브라우저를 이용, 함께 문서를 작성하는 공동체를 가능케 한다. 위키 웹사이트의 한 문서는 "위키 문서"라 부르며, 하이퍼링크로 서로 연결된 전체 문서를 "위키"라 한다.
-       위키는 본질적으로 정보를 만들고, 찾아보고, 검색하기 위한 데이터베이스다.</span>
-    <p>한글</p>
+
+<div class="box">
+    <span>으캬캬캬캬캬카카 안녕하세요 fdfsdfsfs apple ppap</span>
+    <p>뉴질랜드 언론은 15일 과학자들을 인용, 지진 피해가 가장 심한 남섬 북동부 소도시 카이코우라의 해안선 해저가 부분적으로 최소 1m 정도 물 밖으로 솟아오른 것으로 파악됐다고 전했습니다.국립 물·대기연구소의 해양 지질학자 조슈 마운트조이 박사는 헌달리 단층이 길게 뻗친 해안선을 들어 올린 것으로 보인다며 물속에 잠겨 있던 해안선이 부분적으로 1m 정도 물 밖으로 솟아올랐다고 밝혔습니다.많이 솟아오른 곳은 2m 정도 되는 곳도 있는 것으로 알려졌습니다. 윈스턴 그레이 카이코우라 시장은 해저가 솟아오르면서 도시 지형이 완전히 바뀌어버렸다며 "땅이 1m 정도 솟아올랐다. 엄청난 변화가 일어났다"고 말했습니다.</p>
     <div>
-      <a href="">영어</a>
-    <p>불어</p>
+        <a href="">안녕안녕안녕하세요</a>
+        <p>dfjlaksdfjklsfjlkdsjflska</p>
     </div>
+</div>
 
 
 
-
-
-  </div>
+</body>
+</html>
 
 
 
