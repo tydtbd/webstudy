@@ -1,3 +1,7 @@
+@pc Bg2:"http://wondergirls.jype.com/images/profile/large/1.jpg"
+@mobileBg:"http://wondergirls.jype.com/images/bg-720.jpg";
+@mobile Bg2:"http://wondergirls.jype.com/images/profile/large/1.jpg"
+@logo:"http://wondergirls.jype.com/images/logo-s.png";
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +26,7 @@ body {
 }
 header {
   height: 100px;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.53);
   padding: 0 20px;
   box-shadow: 0 2px 10px #666;
 }
@@ -31,7 +35,7 @@ header h1 {
 }
 header h1 a {
   display: block;
-  background-image: url("http://wondergirls.jype.com/images/logo-s.png");
+  background-image: url(../image/logo-s.png);
   width: 104px;
   height: 52px;
   text-indent: -9999px;
@@ -98,16 +102,12 @@ footer {
 }
 @media screen and (max-width: 769px) {
   body {
-    background-image: url("http://wondergirls.jype.com/images/bg-720.jpg");
+    background-image: url('@mobileBg');
+    background-image: url('@mobileBg2');
     background-position: center center;
   }
   header {
     height: 55px;
-  }
-  header h1 a {
-    width: 60px;
-    height: 40px;
-    margin: 5px;
   }
   header nav .menu {
     display: block;
@@ -300,40 +300,10 @@ section.gallery .grid-list ul li img {
   margin-bottom: 5px;
   vertical-align: top;
 }
+section.schedule h2 {
+  background-image: url(http://wondergirls.jype.com/images/title-sche.png);
+  background-repeat: no-repeat;
+}
 section.video h2 {
   background-image: url(http://wondergirls.jype.com/images/title-video.png);
-}
-section.video .list {
-  width: 1000px;
-  margin: 0 auto;
-  border: 1px #F00 solid;
-}
-section.video .list table {
-  width: 100%;
-  border-collapse: collapse;
-}
-section.video .list table thead {
-  visibility: hidden;
-}
-section.video .list table td,
-section.video .list table th {
-  border-bottom: 1px #000 solid;
-  padding: 4px 0;
-}
-section.video .list table tr > td:first-child {
-  text-align: center;
-}
-section.video .list table tr > td:nth-child(3) {
-  text-align: center;
-}
-section.video .list table td[colspan="3"] div {
-  padding: 40px;
-}
-section.video .list table .elip {
-  width: 400px;
-  border: 1px #F00 solid;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }

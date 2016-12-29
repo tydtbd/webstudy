@@ -18,6 +18,7 @@ section{
         }
       }
 
+// disco 페이지
 section.disco{
         .title h2{
                   background-image: url(http://wondergirls.jype.com/images/title-discography.png);
@@ -98,4 +99,91 @@ section.disco{
        }
 
    }
+}
+
+
+// notice 페이지
+section.notice{
+  h2{
+    background-image: url(http://wondergirls.jype.com/images/title-noti.png);
+  }
+  .list{width: 1000px; margin: 0 auto; border: 1px #F00 solid;
+    table{
+            width:100%;
+
+            border-collapse: collapse;
+            thead{
+                visibility: hidden;
+            }
+            td,th{
+                border-bottom:1px #000 solid;
+                padding:4px 0;
+            }
+            tr>td:first-child{
+                text-align:center;
+            }
+            tr>td:nth-child(3){
+                text-align:center;
+            }
+            td[colspan="3"] div{padding:40px;}
+            .elip{
+                width:400px;
+                border:1px #F00 solid;
+                display:block;
+                overflow:hidden;
+                white-space:nowrap;
+                text-overflow:ellipsis;
+            }
+        }
+  }
+
+}
+
+
+// gallery 페이지
+section.gallery{
+    h2{
+        background-image:url(http://wondergirls.jype.com/images/title-gallery.png);
+    }
+    .grid-list{
+        max-width:769px;border:1px #F00 solid;
+        margin:0 auto;
+        overflow:hidden;
+        ul{
+           overflow:hidden;
+            outline:1px #00F solid;
+
+
+            li{
+            width:20%;
+            max-width:153px;
+            float:left;
+
+                img{
+                    max-width: 150px;
+                    width:100%;
+                    margin-bottom:5px;
+                    vertical-align: top;
+                }
+            }
+        }
+    }
+}
+
+
+//  schedule 페이지
+section.schedule{
+  h2{
+    background-image: url(http://wondergirls.jype.com/images/title-sche.png);
+    background-repeat: no-repeat;
+  }
+  }
+
+
+
+//  video 페이지
+section.video{
+  h2{
+    background-image: url(http://wondergirls.jype.com/images/title-video.png);
+  }
 }
