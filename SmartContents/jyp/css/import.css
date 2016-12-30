@@ -1,7 +1,3 @@
-@pc Bg2:"http://wondergirls.jype.com/images/profile/large/1.jpg"
-@mobileBg:"http://wondergirls.jype.com/images/bg-720.jpg";
-@mobile Bg2:"http://wondergirls.jype.com/images/profile/large/1.jpg"
-@logo:"http://wondergirls.jype.com/images/logo-s.png";
 * {
   margin: 0;
   padding: 0;
@@ -35,7 +31,7 @@ header h1 {
 }
 header h1 a {
   display: block;
-  background-image: url(../image/logo-s.png);
+  background-image: url("../image/logo-s.png");
   width: 104px;
   height: 52px;
   text-indent: -9999px;
@@ -55,7 +51,7 @@ header nav .menu {
   display: none;
   height: 55px;
   width: 200px;
-  background-color: #F28195;
+  background-color: #F18195;
   margin-right: -20px;
   line-height: 55px;
   text-align: center;
@@ -74,12 +70,12 @@ header nav li a {
   padding: 0 18px;
   text-decoration: none;
   font-size: 16px;
-  color: #F28195;
+  color: #F18195;
   transition: .1s;
   font-weight: bold inherit;
 }
 header nav li a:hover {
-  border-top: 2px #F28195 solid;
+  border-top: 2px #F18195 solid;
   color: #f4c22d;
 }
 footer {
@@ -136,6 +132,9 @@ footer {
 body.noneBg {
   background: none;
 }
+body.profile {
+  background: url("../image/profile.jpg");
+}
 section > .title {
   margin-bottom: 50px;
   height: 60px;
@@ -150,6 +149,12 @@ section > .title h2 {
   width: 360px;
   height: 51px;
   margin: 0 auto;
+}
+section.profile .img_wrap {
+  width: 250px;
+  position: absolute;
+  top: 20%;
+  margin-left: 8%;
 }
 section.disco .title h2 {
   background-image: url(http://wondergirls.jype.com/images/title-discography.png);
