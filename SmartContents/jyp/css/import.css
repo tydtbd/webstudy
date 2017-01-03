@@ -376,7 +376,9 @@ section.video h2 {
   background-image: url(http://wondergirls.jype.com/images/title-video.png);
 }
 section.video .movie {
-  margin: 0 auto;
+  margin: 30px auto 30px;
   width: 760px;
   height: 480px;
+  z-index: 1;
+  position: relative;
 }
