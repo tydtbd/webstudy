@@ -53,7 +53,7 @@ header nav .menu {
   display: none;
   height: 55px;
   width: 200px;
-  background-color: #F18195;
+  background-color: #F28195;
   margin-right: -20px;
   line-height: 55px;
   text-align: center;
@@ -68,16 +68,17 @@ header nav li:hover {
   background-color: rgba(255, 255, 255, 0.7);
 }
 header nav li a {
+  margin: 0;
   display: block;
   padding: 0 18px;
   text-decoration: none;
   font-size: 16px;
-  color: #F18195;
+  color: #F28195;
   transition: .1s;
   font-weight: bold;
 }
 header nav li a:hover {
-  border-top: 2px #F18195 solid;
+  box-shadow: inset 0px 3px #F18195;
   color: #f4c22d;
 }
 section .biglogo {
@@ -85,9 +86,7 @@ section .biglogo {
   height: 320px;
   background-image: url("http://wondergirls.jype.com/images/mainlogo.png");
   background-size: cover;
-  position: absolute;
-  left: 60%;
-  top: 30%;
+  margin: 20% 0 0 60%;
   transition: 1s;
 }
 section .biglogo:hover {
@@ -100,6 +99,15 @@ footer {
   bottom: 0;
   height: 57px;
   background-color: rgba(0, 0, 0, 0.2);
+}
+footer .icon i:first-child {
+  margin-right: 110px;
+}
+footer .icon i {
+  border: 1px #F00 solid;
+  float: right;
+  color: #FFF;
+  margin-left: 7px;
 }
 footer h3 {
   position: relative;
@@ -165,6 +173,7 @@ section > .title h2 {
   width: 360px;
   height: 51px;
   margin: 0 auto;
+  background-position: center;
 }
 section.profile {
   width: 250px;
@@ -379,6 +388,5 @@ section.video .movie {
   margin: 30px auto 30px;
   width: 760px;
   height: 480px;
-  z-index: 1;
-  position: relative;
+  border: 1px #F00 solid;
 }
