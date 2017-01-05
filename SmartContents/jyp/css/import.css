@@ -390,3 +390,7 @@ section.video .movie {
   height: 480px;
   border: 1px #F00 solid;
 }
+section.video .movie iframe {
+  width: 760px;
+  height: 480px;
+}
