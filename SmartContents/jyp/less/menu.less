@@ -4,7 +4,15 @@ body.noneBg{
 body.profile{
   background: url(@profile);
 }
-
+body.profile2{
+  background: url(@profile2);
+}
+body.profile3{
+  background: url(@profile3);
+}
+body.profile4{
+  background: url(@profile4);
+}
 
 // 서브페이지 공통
 section{
@@ -27,7 +35,7 @@ section{
 
 
 // profile 페이지
-section.profile{
+section.pro{
             width: 250px;
             position: absolute;
             top:20%;
@@ -251,13 +259,37 @@ section.video{
   h2{
     background-image: url(http://wondergirls.jype.com/images/title-video.png);
   }
-  .movie {margin: 30px auto 30px;
+  .movie {margin: 0 auto;
+          width: 100%;
+          height: 100%;
+
+  .video{
           width: 760px;
           height: 480px;
-          border: 1px #F00 solid;
-  iframe {
-          width: 760px;
-          height: 480px;
+          margin: 0 auto;
+    iframe {
+
+            width: 100%;
+            height: 100%;
+    }
   }
-         }
-       }
+
+  ul {
+    padding-top: 40px;
+    list-style: none;
+    text-align: center;
+    font-size: 12px;
+    li{
+      width: 200px;
+      height: 114px;
+      display: inline-block;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+  }
+
+    }
+  }

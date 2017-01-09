@@ -6,6 +6,19 @@
     <title>jyp</title>
     <link rel="stylesheet" href="css/import.css" type="text/css" />
     <link rel="stylesheet" href="font/flaticon.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var aaa = [".profile", ".profile2", ".profile3", ".profile4"]
+            $("section .contents").click(function() {
+                var bbb = $(this).index();
+                var ccc = "body" +
+                    $("body").attr("class", ".profile2")
+                return false;
+            })
+        })
+    </script>
 </head>
 
 
@@ -25,7 +38,7 @@
             </ul>
         </nav>
     </header>
-    <section class="profile">
+    <section class="pro">
         <div class="img_wrap">
             <div class="contents">
                 <a href=""><img src="image/1.jpg" alt=""></a>

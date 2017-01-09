@@ -6,6 +6,23 @@
     <title>jyp</title>
     <link rel="stylesheet" href="css/import.css" type="text/css" />
     <link rel="stylesheet" href="font/flaticon.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $('.movie li a').click(function() {
+
+                var movecode = $(this).attr('href');
+                var url = "https://www.youtube.com/embed/" + movecode
+                $('.movie iframe').attr('src', url)
+
+
+
+                return false
+            })
+
+        })
+    </script>
 </head>
 
 <body class="noneBg">
@@ -29,9 +46,30 @@
             <h2>video</h2>
         </div>
         <div class="movie">
-            <iframe src="https://www.youtube.com/embed/PYGODWJgR-c?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/PYGODWJgR-c" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <ul>
+                <li>
+                    <a href="PYGODWJgR-c"><img src="http://i1.ytimg.com/vi/PYGODWJgR-c/mqdefault.jpg" alt="">
+                        </img>
+                    </a>
+                    <p>Wonder Girls (원... </p><br>2016.07.05
+                </li>
+                <li>
+                    <a href="V9QXQz6uE0M"><img src="http://i1.ytimg.com/vi/V9QXQz6uE0M/mqdefault.jpg" alt="">
+                        </img>
+                    </a>
+                    <p>Wonder Girls (원... </p><br>2015.08.03
+                </li>
+                <li>
+                    <a href="378AnxAve9Y"><img src="http://i1.ytimg.com/vi/378AnxAve9Y/mqdefault.jpg" alt="">
+                        </img>
+                    </a>
+                    <p>Wonder Girls (원... </p><br>2012.07.17
+                </li>
+            </ul>
         </div>
-
     </section>
 
 
@@ -44,6 +82,17 @@
         </section>
 
     </footer>
+
+
+
+
+</body>
+
+</html>
+<a href=""></a>
+</section>
+
+</footer>
 
 
 

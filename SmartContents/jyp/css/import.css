@@ -159,6 +159,15 @@ body.noneBg {
 body.profile {
   background: url("../image/profile.jpg");
 }
+body.profile2 {
+  background: url("../image/profile2.jpg");
+}
+body.profile3 {
+  background: url("../image/profile3.jpg");
+}
+body.profile4 {
+  background: url("../image/profile4.jpg");
+}
 section > .title {
   margin-bottom: 50px;
   height: 60px;
@@ -175,7 +184,7 @@ section > .title h2 {
   margin: 0 auto;
   background-position: center;
 }
-section.profile {
+section.pro {
   width: 250px;
   position: absolute;
   top: 20%;
@@ -183,11 +192,11 @@ section.profile {
   display: inline-block;
   text-align: center;
 }
-section.profile .img_wrap {
+section.pro .img_wrap {
   padding: 0;
   text-align: center;
 }
-section.profile .img_wrap .contents a {
+section.pro .img_wrap .contents a {
   width: 80px;
   height: 80px;
   float: left;
@@ -198,7 +207,7 @@ section.profile .img_wrap .contents a {
   cursor: pointer;
   background-repeat: no-repeat;
 }
-section.profile .img_wrap .contents a img {
+section.pro .img_wrap .contents a img {
   width: 100%;
   height: 100%;
 }
@@ -385,12 +394,31 @@ section.video h2 {
   background-image: url(http://wondergirls.jype.com/images/title-video.png);
 }
 section.video .movie {
-  margin: 30px auto 30px;
-  width: 760px;
-  height: 480px;
-  border: 1px #F00 solid;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
 }
-section.video .movie iframe {
+section.video .movie .video {
   width: 760px;
   height: 480px;
+  margin: 0 auto;
+}
+section.video .movie .video iframe {
+  width: 100%;
+  height: 100%;
+}
+section.video .movie ul {
+  padding-top: 40px;
+  list-style: none;
+  text-align: center;
+  font-size: 12px;
+}
+section.video .movie ul li {
+  width: 200px;
+  height: 114px;
+  display: inline-block;
+}
+section.video .movie ul li img {
+  width: 100%;
+  height: 100%;
 }
