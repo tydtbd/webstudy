@@ -10,11 +10,11 @@
     <script type="text/javascript">
         $(document).ready(function() {
 
-            var aaa = [".profile", ".profile2", ".profile3", ".profile4"]
-            $("section .contents").click(function() {
-                var bbb = $(this).index();
-                var ccc = "body" +
-                    $("body").attr("class", ".profile2")
+            var aaa = ["profile", "profile2", "profile3", "profile4"]
+            $("section .img_wrap div").click(function() {
+                var idx = $(this).index();
+
+                $("body").attr("class", aaa[idx])
                 return false;
             })
         })

@@ -134,14 +134,14 @@ $(document).ready(function() {
 
     // Fade Banner
     var idxx;
-    $(".fadebanner li a").click(function() {
+  $(".fadebanner li a").click(function() {
 
-        idxx = $(this).parent().index();
-        $(".fadebanner li.on").removeClass().find("img").fadeOut(4800);
+      idxx = $(this).parent().index();
+      $(".fadebanner li.on").removeClass().find("img").fadeOut(4800);
 
-        $(".fadebanner li").eq(idxx).addClass("on").find("img").fadeIn();
-        return false;
-    })
+      $(".fadebanner li").eq(idxx).addClass("on").find("img").fadeIn();
+      return false;
+  })
 
     //**********************************************************
 

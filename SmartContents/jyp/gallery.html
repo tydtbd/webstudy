@@ -6,6 +6,35 @@
     <title>jyp</title>
     <link rel="stylesheet" href="css/import.css" type="text/css" />
     <link rel="stylesheet" href="font/flaticon.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".grid-list li").click(function() {
+                blaind()
+                $(this).next("div").css({
+                    "width": "300px",
+                    "height": "300px",
+                    "border": "1px #F00 solid",
+                    "display": "block",
+                    "position": "absolute",
+                    "left": "0",
+                    "margin-left": "50%",
+                    "background": "#FFF"
+                }).animate({
+                    "top": 7050
+                })
+
+            });
+
+            $(".btngroup div").prepend("<button class='close'>닫기</button>")
+
+            function blaind() {
+                $("body").prepend("<div class='blaind'></div>")
+                $(".blaind").fadeTo(1000, 0.5)
+            }
+
+        })
+    </script>
 </head>
 
 <body class="noneBg">

@@ -351,6 +351,7 @@ section.notice .list table .elip {
 }
 section.gallery {
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 section.gallery h2 {
   background-image: url(http://wondergirls.jype.com/images/title-gallery.png);
