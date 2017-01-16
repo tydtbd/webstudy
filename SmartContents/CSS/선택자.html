@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>selectors</title>
+
+    <style>
+    /*div{border:1px #F00 solid;}*/  태그자체 선택자
+    /*div,ul,li{border:1px #F00 solid;}*/ 동시 선택자
+    /*.menu {border:1px #F00 solid}*/ 클래스 선택자
+    /*#unit1{border:1px #F00 solid}*/ 아이디 선택자
+    /*.menu li {border:1px #F00 solid;}*/ 자식 선택자
+    /*.menu>ul>li{border:1px #F00 solid;}*/
+    /*.menu .testul>li{border:1px #F00 solid;}*/
+    /*.menu ul.subul {border:1px #F00 solid;}*/
+    /*ul.subul.list-item{border:1px #F00 solid;}*/
+    /*.menu li li:first-child{border:1px #F00 solid}*/
+    /*.menu li li:last-child{border:1px #F00 solid}*/
+    /*li input[type="button"]{border:1px #F00 solid}*/ 속성 선택자
+    /*a[href="라이코스"]{border:1px #F00 solid}*/ 는 (^*$) ^는 시작(ex=라 로시작하는것) *는 모든것(ex=이코 가 포함되있는것) $는 끝나면(ex=코스 로 끝나는것)*/
+    /*.unit+li+li{border:1px #F00 solid}*/
+    /*.unit~p{border:1px #F00 solid}*/
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+
+<div>
+  <div class="menu">
+  <ul class="first-ul">
+
+    <li>text1
+      <ul class="subul">
+        <li>text1-1</li>
+        <li>text2-2</li>
+        <li class="unit">text3-3</li>
+        <li>text1-1</li>
+        <li>text2-2</li>
+        <li>text3-3</li>
+      </ul>
+    </li>
+    <li>text2
+      <ul class="subul list-item">
+        <li><input type="text"></li>
+        <li><input type="button"></li>
+        <li>text3-3</li>
+      </ul>
+    </li>
+    <li>text3
+      <ul class="testul">
+        <li><input type="text"></li>
+        <li id="unit">text2-2</li>
+        <li>text3-3
+          <ul class="testul1">
+            <li><input type="text1"></li>
+            <li id="unit1">text2-2</li>
+            <li>text3-3</li>
+            <li><input type="text1"></li>
+            <li id="unit2">text2-2</li>
+            <li>text3-3</li>
+            
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

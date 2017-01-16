@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>회원가입</title>
+    <link type="text/css" rel="stylesheet" href="../css/join.css" />
+    <!--[if lt IE 9]>
+        <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+        <script src='http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js'></script>
+        <![endif]-->
+    <style media="screen">
+    @charset "utf-8";
+        /* CSS Document */
+        /*브라우저 초기화작업*/
+
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Nanum Gothic', '돋움', monospace, sans-serif;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            border: none;
+        }
+
+        table {
+            border-spacing: 0px;
+        }
+
+        address {
+            font-style: normal;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        legend {
+            display: none;
+        }
+
+        input[type=button],
+        input[type=submit],
+        input[type=reset],
+        input[type=image],
+        button {
+            cursor: pointer;
+        }
+
+        header,
+        section,
+        footer,
+        nav,
+        aside,
+        figure,
+        article {
+            display: block;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div#s_join {
+            height: 575px;
+            width: 700px;
+            margin: 150px auto;
+        }
+
+        .jemok {
+            margin: 0 auto;
+        }
+
+        div.jemok h1 {
+            color: #0F2D1A;
+            font-size: 25px;
+            text-align: center;
+        }
+
+        div.s_join table {
+            width: 530px;
+            border: 1px solid #ccc;
+            margin: 0px auto;
+            margin-top: 40px;
+        }
+
+        div.s_join th {
+            width: 250px;
+            padding: 10px 20px;
+            background-color: #F9F8F7;
+            text-align: left;
+            position: relative;
+            border-bottom: 1px solid #D6D2CF;
+        }
+
+        div.s_join td {
+            width: 600px;
+            padding: 10px 20px;
+            position: relative;
+            border-bottom: 1px solid #D6D2CF;
+        }
+
+        div.s_join input.join_box1 {
+            width: 175px;
+            height: 25px;
+            line-height: 10px;
+            box-sizing: border-box;
+            padding-left: 18px;
+            border: 1px solid #D6D2CF;
+        }
+
+        div.s_join input.join_box2 {
+            width: 247px;
+            height: 25px;
+            line-height: 10px;
+            box-sizing: border-box;
+            padding-left: 18px;
+            border: 1px solid #D6D2CF;
+            margin-top: 10px;
+        }
+
+        div.s_join input.join_box3 {
+            width: 91px;
+            height: 25px;
+            line-height: 10px;
+            box-sizing: border-box;
+            padding-left: 18px;
+            border: 1px solid #D6D2CF;
+            margin-top: 10px;
+        }
+
+        div.s_join input.join_box4 {
+            width: 55px;
+            height: 25px;
+            line-height: 10px;
+            box-sizing: border-box;
+            padding-left: 18px;
+            border: 1px solid #D6D2CF;
+        }
+
+        div.s_join input.join_box5 {
+            width: 148px;
+            height: 25px;
+            line-height: 10px;
+            box-sizing: border-box;
+            padding-left: 18px;
+            border: 1px solid #D6D2CF;
+        }
+
+        div.s_join input.join_bt1 {
+            position: absolute;
+            top: 10px;
+            left: 200px;
+        }
+
+        div.s_join div.l_bt {
+            padding-top: 30px;
+            text-align: center;
+            position: relative;
+            margin-left: 10px;
+        }
+
+        div.s_join td button.but_1 {
+            width: 70px;
+            height: 25px;
+            background-color: #CCCCCC;
+            color: #FFFFFF;
+            border-style: none;
+            border-radius: 10px;
+        }
+
+        div.s_join td button.but_2 {
+            width: 95px;
+            height: 25px;
+            background-color: #CCCCCC;
+            color: #FFFFFF;
+            border-style: none;
+            border-radius: 10px;
+        }
+
+        button.but_4 {
+            width: 138px;
+            height: 46px;
+            background-color: #0A351D;
+            color: #FFFFFF;
+            font-size: 20px;
+            border-style: none;
+            border-radius: 10px;
+            margin-bottom: 50px
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="s_join">
+        <div class="s_join">
+            <form>
+                <fieldset>
+                    <div class="jemok">
+                        <h1>회원가입</h1>
+                    </div>
+                    <table>
+
+                        <tr>
+                            <th><label for="join_name">*이름</label></th>
+                            <td><input type="text" id="join_name" class="join_box1" /> &nbsp;&nbsp;띄어쓰기 없이 입력해주세요</td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="join_id">*아이디</label></th>
+                            <td>
+                                <input type="text" id="join_id" class="join_box1" />
+                                <button class="but_1">중복확인</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="join_pw1">*비밀번호</label></th>
+                            <td><input type="password" id="join_pw1" class="join_box1" maxlength="12" /> &nbsp;&nbsp;영문/특문/숫자 혼합하여 6~12자</td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="join_pw2">*비밀번호 확인</label></th>
+                            <td><input type="password" id="join_pw2" class="join_box1" maxlength="12" /> &nbsp;&nbsp;영문/특문/숫자 혼합하여 6~12자</td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="join_juso">*주소</label></th>
+                            <td>
+                                <input type="text" id="join_juso" class="join_box1" />
+                                <button class="but_2">우편번호검색</button><br>
+                                <input type="text" id="join_juso" class="join_box2" /> - <input type="text" class="join_box3" />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="join_phone">*휴대폰번호</label></th>
+                            <td>
+                                <input type="text" id="join_phone" class="join_box4" maxlength="3" /> - <input type="text" class="join_box4" maxlength="4" /> - <input type="text" class="join_box4" maxlength="4" /> *문자수신
+                                <input type="radio" name="chk_letter" id="join_yes" checked="checked" /><label for="join_yes">예</label> &nbsp;&nbsp;&nbsp; <input type="radio" name="chk_letter" id="join_no" /><label for="join_no">아니오</label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th><label for="join_email">*이메일</label></th>
+                            <td><input type="text" id="join_email" class="join_box5" /> @ <input type="text" class="join_box5" />
+                        </tr>
+
+                        <tr>
+                            <th>*메일수신여부</th>
+                            <td>
+                                *이메일 수신을 허용하시겠습니까?
+                                <input type="radio" name="chk_email" id="join_yes2" checked="checked" /><label for="join_yes2">예</label> &nbsp;&nbsp;&nbsp; <input type="radio" name="chk_email" id="join_no2" /><label for="join_no2">아니오</label>
+                            </td>
+                        </tr>
+
+                    </table>
+                    <div class="l_bt">
+
+                        <button class="but_4">가입하기</button>
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
