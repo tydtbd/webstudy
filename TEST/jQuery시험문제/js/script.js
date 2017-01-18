@@ -1,12 +1,12 @@
 $(document).ready(function() {
     //**********************************************************
     // A. hover Menu 1안 내꺼
-    $("nav ul li").mouseover(function() {
-            $(this).css("background-color", "red").children("a").css("color", "#FFF")
-        }),
-        $("nav ul li").mouseout(function() {
-            $(this).css("background-color", "#ccc").children("a").css("color", "#000")
-        })
+    // $("nav ul li").mouseover(function() {
+    //         $(this).css("background-color", "red").children("a").css("color", "#FFF")
+    //     }),
+    //     $("nav ul li").mouseout(function() {
+    //         $(this).css("background-color", "#ccc").children("a").css("color", "#000")
+    //     })
 
     //**********************************************************
 
@@ -134,14 +134,14 @@ $(document).ready(function() {
 
     // Fade Banner
     var idxx;
-  $(".fadebanner li a").click(function() {
+    $(".fadebanner li a").click(function() {
 
-      idxx = $(this).parent().index();
-      $(".fadebanner li.on").removeClass().find("img").fadeOut(4800);
+        idxx = $(this).parent().index();
+        $(".fadebanner li.on").removeClass().find("img").fadeOut(4800);
 
-      $(".fadebanner li").eq(idxx).addClass("on").find("img").fadeIn();
-      return false;
-  })
+        $(".fadebanner li").eq(idxx).addClass("on").find("img").fadeIn();
+        return false;
+    })
 
     //**********************************************************
 
