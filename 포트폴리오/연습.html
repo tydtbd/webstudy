@@ -54,10 +54,11 @@
             position: relative;
             line-height: 100px;
             padding-top: 160px;
+            font-family: 'Droid Sans', sans-serif;
         }
 
-        .title {
-            background: url(https://cdn.pixabay.com/photo/2017/01/06/20/43/soap-bubble-1958841_960_720.jpg) no-repeat;
+        .profile {
+            background: url(http://68.media.tumblr.com/6060ee7633377be8dd7bd10c7bb9602d/tumblr_o4cqtyQHRX1slhhf0o1_1280.jpg) no-repeat;
             background-size: cover;
             background-position: center;
         }
@@ -72,21 +73,26 @@
             height: 100px;
             bottom: 0;
             position: relative;
-            background: #ccc;
+            background: #fff;
         }
 
         .page {
             width: 100%;
             text-align: center;
-            padding-bottom: 80px;
+            position: absolute;
+            top: 20%;
         }
 
         .portfolio {
-            background-color: #000;
+            background: url(http://68.media.tumblr.com/74d1d7b162c929d16d51607be7ff7b05/tumblr_ohytcenTKk1slhhf0o1_1280.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
         .contact {
-            background-color: #000;
+            background: url(https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_960_720.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
         .con_box {
@@ -97,13 +103,19 @@
             margin: 0 auto;
             box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
         }
+
+        .back {
+            width: 100%;
+            height: 100%;
+            background: url(http://www.gaengkun.com/theme/basic/images/content_bg.png)
+        }
     </style>
 </head>
 
 
 
 <body>
-
+    <!-- http://www.gaengkun.com/theme/basic/images/content_bg.png -->
     <header>
         <ul>
             <li><a href="">PROFILE</a></li>
@@ -111,28 +123,27 @@
             <li><a href="">CONTACT</a></li>
         </ul>
     </header>
-
-    <section class="title">
+    <!-- 프로필 페이지 -->
+    <section class="profile">
         <div class="page">
             <h1>PROFILE</h1>
         </div>
     </section>
-
+    <!-- 포트폴리오 페이지 -->
     <section class="portfolio">
-
-        <div class="page">
+        <div class="port_page">
             <h1>PORTFOLIO</h1>
         </div>
     </section>
-
+    <!-- 컨택트 페이지 -->
     <section class="contact">
+        <div class="back">
+            <div class="con_page">
+                <h1>CONTACT</h1>
+            </div>
+            <div class="con_box">
 
-        <div class="page">
-            <h1>CONTACT</h1>
-        </div>
-
-        <div class="con_box">
-
+            </div>
         </div>
     </section>
 
