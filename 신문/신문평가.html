@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style media="screen">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png)
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .page {
+        margin: 150px auto;
+        width: 900px;
+        height: 540px;
+        background: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png) 50% 0 no-repeat;
+    }
+
+    h1 {
+        width: 840px;
+        padding: 20px 0 25px;
+        margin: 0 auto;
+        border-bottom: 3px #545454 solid;
+    }
+
+    .banner {
+        float: right;
+        margin-top: 20px;
+    }
+
+    .button {
+        width: 840px;
+        height: 25px;
+        margin: -31px auto 20px auto;
+    }
+
+    .fr {
+        float: left;
+    }
+
+    .fr a {
+        display: block;
+        float: left;
+    }
+
+    .sbs {
+        width: 66px;
+        height: 22px;
+        margin-right: 2px;
+        background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -187px -199px no-repeat;
+    }
+
+    .omb {
+        width: 75px;
+        height: 22px;
+        margin-right: 2px;
+        background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -294px -175px no-repeat;
+    }
+
+    .soc {
+        width: 28px;
+        height: 22px;
+        margin-right: 5px;
+        background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -500px -271px no-repeat;
+    }
+
+    .button span {
+        font-size: 11px;
+        line-height: 13px;
+        font-family: tahoma;
+        color: #454545;
+        float: left;
+        padding: 6px 0 0 9px;
+        margin-top: -1px;
+    }
+
+    .main {
+        width: 840px;
+        height: 380px;
+        margin: 0 auto;
+    }
+
+    .main_left {
+        width: 90px;
+        height: 100%;
+        float: left;
+    }
+
+    .weather {
+        height: 26px;
+        background: url(http://static.naver.net/newsstand/2017/0124/sbs/135550/013.gif)
+    }
+
+    ul {
+        list-style: none;
+        height: 26px;
+    }
+
+    .weather ul li {
+        height: 16px;
+        padding: 5px 10px;
+        position: relative;
+        text-align: right;
+    }
+
+    .weather li a {
+        color: #fff;
+        font-weight: bold;
+        font-size: 10px;
+    }
+
+    .weather a img {
+        position: absolute;
+        top: 4px;
+        left: 10px;
+    }
+
+    .left_news {
+        width: 100%;
+    }
+
+    .left_news div {
+        width: 78px;
+        padding: 9px 5px 0 5px;
+        border: 1px solid #d6d6d6;
+        border-top: 0;
+        position: relative;
+    }
+
+    .left_news h2 {
+        height: 11px;
+        margin-bottom: 8px;
+    }
+
+    .left_news h2 img {
+        vertical-align: top;
+    }
+
+    .left_news a {
+        display: block;
+        height: 122px;
+        padding-bottom: 9px;
+        font-size: 11px;
+    }
+
+    .left_news a img {
+        width: 78px;
+        height: 87px;
+    }
+
+    .left_news a span {
+        display: block;
+        height: 25px;
+        overflow: hidden;
+        font-size: 11px;
+        font-family: Dotum;
+        color: gray;
+    }
+
+    .left_news div:first-child {
+        border-bottom: 0;
+    }
+
+    .center {
+        width: 530px;
+        height: 100%;
+        margin: 0 10px;
+        float: left;
+    }
+
+    .banner a {
+        display: block;
+    }
+
+    .header a {
+        display: block;
+    }
+
+    .right {
+        width: 200px;
+        height: 100%;
+        float: left;
+    }
+
+    .header span {
+        display: block;
+        font-size: 12px;
+    }
+
+    .header span strong {
+        font-size: 19px;
+    }
+
+    .sub {
+        position: relative;
+        float: left;
+    }
+
+    .sub2,
+    .sub3 {
+        position: relative;
+        float: right;
+    }
+
+    .sub2 span {}
+
+    .sub3 span {}
+
+    .header a {
+        position: relative;
+    }
+
+    .sub span {
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div class="page">
+        <h1>
+          <a href="http://news.sbs.co.kr/indexes/news_index.html">
+            <img src="http://static.naver.net/newsstand/up/2013/0813/nsd11419129.gif" alt="">
+          </a>
+          <div class="banner">
+              <a href="http://ad.naver.com/adclick?unit=983F&ac=7427796&src=3046810&br=2430280&rk=WIbJfwpizT4AAA7R7WMAAAC0&eltts=IBv3xY%2FbSwx4XeXVkkL15g%3D%3D&oid=&&:::cl:::">
+                  <img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01484900114786.jpg" alt="">
+              </a>
+          </div>
+        </h1>
+        <div class="button">
+            <div class="fr">
+                <a href="" class="sbs"></a>
+                <a href="" class="omb"></a>
+                <a href="" class="soc"></a>
+                <span>01-24 13:50편집</span>
+            </div>
+        </div>
+        <!-- 머리부분  끝-->
+        <div class="main">
+            <!-- 왼쪽 -->
+            <div class="main_left">
+                <h2>
+                  <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004006777">
+                    <img src="http://static.naver.net/newsstand/2017/0124/sbs/135550/001.gif" alt="">
+                  </a>
+                </h2>
+                <div class="weather">
+                    <ul>
+                        <li>
+                            <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004007881">
+                                <img src="http://static.naver.net/newsstand/2017/0124/sbs/135550/002.png" alt="날씨"> -4.1°
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="left_news">
+                    <div class="news2">
+                        <h2>
+                          <img src="http://static.naver.net/newsstand/2017/0124/sbs/135550/003.gif" alt="">
+                        </h2>
+                        <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004005576&plink=STAND&cooper=NAVER">
+                            <img src="http://static.naver.net/newsstand/2017/0124/sbs/135550/004.jpg" alt="">
+                            <span>김기춘·조윤선, '왜 슬픈 예감은 틀린 적이 없나'</span>
+                        </a>
+                    </div>
+                    <div class="news3">
+                        <h2>
+                        <img src="http://static.naver.net/newsstand/2017/0124/sbs/135550/005.gif" alt="">
+                      </h2>
+                        <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004006274&plink=STAND&cooper=NAVER">
+                            <img src="http://static.naver.net/newsstand/2017/0124/sbs/135550/006.jpg" alt="">
+                            <span>충성고객은 '호갱' 취급…車보험료 아끼는 '꿀팁'은? </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- 왼쪽 끝 -->
+            <div class="center">
+                <div class="header">
+                    <div class="sub">
+                        <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004007937&plink=STAND&cooper=NAVER">
+                            <img src="http://static.naver.net/newsstand/2017/0124/sbs/162550/007.jpg" width="353" height="199">
+                            <span>
+                              <strong>특검 수사 속 '극비 성묘 사진' 공개한 박 대통령…의도는</strong>
+                              인터뷰를 인용보도할 때는 프로그램명 'SBS '을 정확히 밝혀주시기 바랍니다. 저작권은 SBS에 있습니다.■ 방송 : SBS  월~금 (15:00~16:30)■ 진행 : 주영진 앵
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="sub2">
+                        <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008168&plink=STAND&cooper=NAVER">
+                            <img src="http://static.naver.net/newsstand/2017/0124/sbs/171655/008.jpg" width="172" height="97">
+                            <span>'블랙리스트 스모킹건' 유진룡…"김기춘 주도" 작심 발언</span>
+                        </a>
+                    </div>
+
+                    <div class="sub3">
+                        <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008630&plink=STAND&cooper=NAVER">
+                            <img src="http://static.naver.net/newsstand/2017/0124/sbs/171655/009.jpg" width="172" height="97">
+                            <span>"롯데 압수수색 당하기 전 전화…70억 돌려주라 지시"</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+</body>
+
+</html>
