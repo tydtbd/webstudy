@@ -21,6 +21,10 @@
         text-decoration: none;
     }
 
+    ul {
+        list-style: none;
+    }
+
     .page {
         margin: 150px auto;
         width: 900px;
@@ -103,8 +107,7 @@
         background: url(http://static.naver.net/newsstand/2017/0124/sbs/135550/013.gif)
     }
 
-    ul {
-        list-style: none;
+    .weather ul {
         height: 26px;
     }
 
@@ -184,23 +187,26 @@
         display: block;
     }
 
-    .header a {
+    .top {
+        margin-top: -5px;
+        overflow: hidden;
+    }
+
+    .top a {
         display: block;
     }
 
-    .right {
-        width: 200px;
-        height: 100%;
-        float: left;
-    }
-
-    .header span {
+    .top span {
         display: block;
         font-size: 12px;
+        color: #fff;
     }
 
-    .header span strong {
+    .top span strong {
         font-size: 19px;
+        display: block;
+        font-family: Dotum;
+        letter-spacing: -2px;
     }
 
     .sub {
@@ -214,16 +220,178 @@
         float: right;
     }
 
-    .sub2 span {}
+    .sub2 span {
+        position: absolute;
+        bottom: 0;
+        padding: 61px 7px 7px 7px;
+    }
 
-    .sub3 span {}
+    .sub3 span {
+        position: absolute;
+        bottom: 0;
+        padding: 61px 7px 7px 7px;
+    }
 
-    .header a {
+    .top a {
         position: relative;
     }
 
     .sub span {
+        bottom: 0;
         position: absolute;
+        overflow: hidden;
+        padding: 126px 10px 8px 10px;
+    }
+
+    .right {
+        width: 200px;
+        height: 100%;
+        float: left;
+    }
+
+    .bar {
+        width: 510px;
+        height: 23px;
+        padding: 0 10px;
+        background: url(http://static.naver.net/newsstand/2017/0124/sbs/204659/013.gif) repeat-x left bottom;
+        margin-top: 10px;
+    }
+
+    .bar div {
+        width: 510px;
+        height: 23px;
+        text-align: center;
+    }
+
+    .bar a {
+        font-size: 12px;
+        color: #fff;
+    }
+
+    .bar a+a {
+        background: url(http://static.naver.net/newsstand/2017/0124/sbs/204659/017.gif) no-repeat left 0px;
+        padding: 0 6px 0 7px;
+    }
+
+    .video {
+        width: 223px;
+        height: 123px;
+        padding: 12px 10px;
+        border: 1px solid gray;
+        border-right: 1px solid gray;
+        border-top: 0;
+        float: left;
+    }
+
+    .issue {
+        width: 264px;
+        height: 131px;
+        padding: 8px 10px;
+        float: left;
+        border-bottom: 1px solid gray;
+        border-right: 1px solid gray;
+        position: relative;
+    }
+
+    .video li {
+        position: relative;
+    }
+
+    .video li+li {
+        margin-top: 10px;
+    }
+
+    .video li a {
+        display: block;
+        overflow: hidden;
+    }
+
+    .video li img {
+        float: left;
+    }
+
+    .video li span {
+        width: 113px;
+        height: 48px;
+        margin: 4px 0 0 7px;
+        overflow: hidden;
+        display: block;
+        float: left;
+        font-size: 11px;
+        color: #000;
+    }
+
+    .issue li {
+        padding: 5px 0 0 7px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        background: url(http://static.naver.net/newsstand/2017/0124/sbs/204659/019.gif)no-repeat 0px 12px;
+        line-height: 1;
+    }
+
+    .issue li a {
+        font-size: 12px;
+        font-family: Dotum;
+        color: #000;
+    }
+
+    .category ul {
+        margin-top: -5px;
+        height: 198px;
+        border: 1px gray solid;
+        padding: 0 10px;
+    }
+
+    .category li {
+        height: 25px;
+        width: 178px;
+        padding: 5px 0 9px 0;
+        line-height: 1;
+    }
+
+    .category li a {
+        font-size: 12px;
+        font-family: Dotum;
+        color: #000;
+    }
+
+    .sport {
+        height: 171px;
+        margin-top: 9px;
+        position: relative
+    }
+
+    .sport img {
+        display: block;
+    }
+
+    .last {
+        display: block;
+        height: 58px;
+        padding: 6px 8px;
+        border: 1px solid #d6d6d6;
+        border-top: 0;
+        font-size: 12px;
+        font-family: Dotum;
+    }
+
+    .last strong {
+        display: block;
+        height: 32px;
+        overflow: hidden;
+        margin-bottom: 5px;
+        color: #000;
+    }
+
+    .last span {
+        display: block;
+        height: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #ccc;
+        font-family: Dotum;
     }
 </style>
 
@@ -288,13 +456,13 @@
             </div>
             <!-- 왼쪽 끝 -->
             <div class="center">
-                <div class="header">
+                <div class="top">
                     <div class="sub">
                         <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004007937&plink=STAND&cooper=NAVER">
                             <img src="http://static.naver.net/newsstand/2017/0124/sbs/162550/007.jpg" width="353" height="199">
                             <span>
                               <strong>특검 수사 속 '극비 성묘 사진' 공개한 박 대통령…의도는</strong>
-                              인터뷰를 인용보도할 때는 프로그램명 'SBS '을 정확히 밝혀주시기 바랍니다. 저작권은 SBS에 있습니다.■ 방송 : SBS  월~금 (15:00~16:30)■ 진행 : 주영진 앵
+                              인터뷰를 인용보도할 때는 프로그램명 'SBS '을 정확히 밝혀주시기 바랍니다.
                             </span>
                         </a>
                     </div>
@@ -313,10 +481,58 @@
                         </a>
                     </div>
                 </div>
-
+                <div class="bar">
+                    <div>
+                        <a href="">'갑질' 조합장, 음주 운전 아니냐고요?</a>
+                        <a href="">"취소나 해라 X아" 카카오택시 기사가 '욕설 문자'</a>
+                    </div>
+                </div>
+                <div class="video">
+                    <ul>
+                        <li>
+                            <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008846&plink=STAND&cooper=NAVER">
+                                <img src="http://static.naver.net/newsstand/2017/0124/sbs/204659/010.jpg" width="100" height="56" alt="">
+                                <span>[단독] 경적 울리며 통학차량 위협…공포에 떤 아이들</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008847&plink=STAND&cooper=NAVER">
+                                <img src="http://static.naver.net/newsstand/2017/0124/sbs/204659/011.jpg" width="100" height="56" alt="">
+                                <span>"대머리는 안 돼"…출근 첫날 채용 거부한 특급 호텔</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="issue">
+                    <ul>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008865&plink=STAND&cooper=NAVER">최순실 측 "검찰이 노승일 이용해 '함정 녹음'" 의혹 제기</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008895&plink=STAND&cooper=NAVER">[속보] 英 대법원, 브렉시트 개시 '의회승인 필요' 판결</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008825&plink=STAND&cooper=NAVER">특검, '6차례 소환 불응' 최순실 체포영장 내일 집행 검토</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008245&plink=STAND&cooper=NAVER">최경희 전 이대총장 "정유라, 뭐가 특별하다고…" 반문</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004007550&plink=STAND&cooper=NAVER">'똘똘이'에서 수갑 찬 '법꾸라지'까지…김기춘의 시작과 끝</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008396&plink=STAND&cooper=NAVER">75cm 눈 내린 울릉도…"이 정도는 아무렇지도 않아"</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="right">
-
+                <div class="category">
+                    <ul>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008842&plink=STAND&cooper=NAVER">"나라 망신도 어느 정도지!"…몰려온 보수단체 회원들</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008971&plink=STAND&cooper=NAVER">설 앞둔 의원회관에 어떤 선물 쌓여있나 보니…'씁쓸'</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004007028&plink=STAND&cooper=NAVER">[영상] "사표 써, XX새끼"…직원에게 20분 욕설 '갑질'</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008475&plink=STAND&cooper=NAVER">[영상] 이효리의 '택시 생방송'…기사님과 토크쇼</a></li>
+                        <li><a href="http://news.sbs.co.kr/news/endPage.do?news_id=N1004008492&plink=STAND&cooper=NAVER">"런닝맨, 계속 달린다"…"이 멤버 그대로 방송 지속"</a></li>
+                    </ul>
+                </div>
+                <div class="sport">
+                    <a href="href=" http://news.sbs.co.kr/news/endPage.do?news_id=N1004008964&plink=STAND&cooper=NAVER "">
+                        <img src="http://static.naver.net/newsstand/2017/0124/sbs/214655/012.jpg" width="200" height="100">
+                        <span class="last">
+                         <strong>美·日 뿌리친 이대호…역대 최고 150억에 롯데 복귀</strong>
+                         <span>국가대표 4번 타자 이대호 선수가 6년 만에 국내 무대로 돌아옵니다. 역대 최고액인 150억 원에 친정팀 롯데와 4년 계약을 맺었습니다.이성훈 기자입니다.</span>
+                        </span>
+                    </a>
+                </div>
             </div>
         </div>
 </body>
