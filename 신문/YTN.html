@@ -5,211 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background: url(http://static.naver.net/newsstand/img/20121231/bg_bd.png)
-        }
-
-        .page {
-            position: relative;
-            margin: 0 auto;
-            width: 900px;
-            height: 540px;
-            background: url(http://static.naver.net/newsstand/img/20121231/bg_panel.png) 50% 0 no-repeat;
-        }
-
-        .page h1 {
-            width: 840px;
-            padding: 20px 0 33px;
-            margin: 0 auto;
-            text-align: left;
-            border-bottom: 3px solid #545454;
-        }
-
-        .page h1 a {
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .page h1 a img {
-            vertical-align: top;
-        }
-
-        .fr {
-            width: 840px;
-            height: 25px;
-            margin: -31px auto 20px auto;
-        }
-
-        .fr .fr1 {
-            float: left;
-            display: block;
-            width: 66px;
-            height: 22px;
-            background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -188px -200px no-repeat;
-        }
-
-        .fr .fr2 {
-            padding: 0 0 0 70px;
-            margin-left: 2px;
-            vertical-align: top;
-            float: left;
-            height: 22px;
-            display: block;
-            background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -294px -175px no-repeat;
-        }
-
-        .fr .fr3 {
-            margin-left: 5px;
-            float: left;
-            width: 28px;
-            height: 22px;
-            display: block;
-            background: url(http://static.naver.net/newsstand/img/20140716/sp_nwstd.png) -500px -270px no-repeat;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .fr span {
-            margin-left: 5px;
-            font-size: 12px;
-        }
-
-        .da {
-            float: right;
-        }
-
-        .center {
-            width: 840px;
-            height: 380px;
-            margin: 20px auto;
-            outline: 1px #f00 solid;
-        }
-
-        .left {
-            width: 605px;
-            height: 380px;
-            float: left;
-        }
-
-        .left1 {
-            width: 403px;
-            height: 227px;
-            position: relative;
-            float: left;
-            margin: 0 2px 0 0;
-        }
-
-        .left1 img {
-            width: 100%;
-            height: 100%;
-        }
-
-        ul {
-            width: 200px;
-            height: 227px;
-            list-style: none;
-            float: left;
-        }
-
-        ul li {
-            width: 200px;
-            height: 112px;
-            margin-bottom: 3px;
-        }
-
-        ul li img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .right {
-            width: 230px;
-            height: 380px;
-            background: #ccc;
-            float: right;
-        }
-
-        .left1 span {
-            display: block;
-            margin-top: -35px;
-            color: #fff;
-            font-size: 21px;
-            font-weight: bold;
-            letter-spacing: -4px;
-        }
-
-        .title {
-            position: absolute;
-            height: 157px;
-            top: 70px;
-            left: 0;
-            width: 403px;
-            background: url(http://static.naver.net/newsstand/2017/0117/digitalytn/171049/009.png) repeat-x;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>ytn신문</title>
 </head>
 
 <body>
-    <div class="page">
-        <h1><a href="http://www.ytn.co.kr/">
-          <img src="http://static.naver.net/newsstand/up/2014/0407/nsd163932956.gif" alt="">
-        </a>
-      </h1>
-        <div class="fr">
-            <a href="" class="fr1"></a>
-            <a href="" class="fr2"></a>
-            <a href="" class="fr3"></a>
-            <span>01-16 17:45편집</span>
+    <div class="page grid">
+        <div class="top">
+            <h1>
+            <a href="http://www.ytn.co.kr/">
+                <img src="http://static.naver.net/newsstand/up/2014/0407/nsd163932956.gif" alt="ytn">
+            </a>
+            </h1>
+            <div class="bannar grid">
+                <a href="http://ad.naver.com/adclick?unit=983F&ac=7435401&src=3051656&br=2434154&rk=WIminQpizUAAAFLT5MYAAAK@&eltts=czMETVKFEiWt5VwItqz6AA%3D%3D&oid=&&:::cl:::">
+                    <img src="http://adcreative.naver.com/ad3/1004/1004874/468_60_01485407048959.jpg" alt="해피빈">
+                </a>
+            </div>
         </div>
-        <!-- 버튼 -->
-        <div class="center">
+        <div class="news grid">
             <div class="left">
-                <div class="left1">
-                    <span>이재용 구속여부 결정할 판사는 누구?</span>
-                    <a href="http://www.ytn.co.kr/_ln/0103_201701171401057125_005">
-                        <img src="http://static.naver.net/newsstand/2017/0117/digitalytn/162313/001.jpg" alt="">
-                        <div class="title"></div>
-
-
-                    </a>
-
+                <div class="lefttop grid">
+                    <div class="img1">
+                        <a href="http://www.ytn.co.kr/_ln/0103_201701261438415336_005">
+                            <img src="http://static.naver.net/newsstand/2017/0126/digitalytn/165552/001.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="img2">
+                        <a href="http://www.ytn.co.kr/_ln/0101_201701261632270771_005">
+                            <img src="http://static.naver.net/newsstand/2017/0126/digitalytn/165552/002.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="img3">
+                        <a href="http://www.ytn.co.kr/_ln/0108_201701261507131714_005">
+                            <img src="http://static.naver.net/newsstand/2017/0126/digitalytn/165552/003.jpg" alt="">
+                        </a>
+                    </div>
                 </div>
-
-                <div class="left2">
-                    <ul>
-                        <li>
-                            <a href="">
-                                <img src="http://static.naver.net/newsstand/2017/0117/digitalytn/162313/002.jpg" alt="">
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="http://static.naver.net/newsstand/2017/0117/digitalytn/162313/003.jpg" alt="">
-                            </a>
-
-                        </li>
-                    </ul>
-                </div>
+                <div class="leftmiddle grid"></div>
             </div>
-            <div class="right">
-
-            </div>
+            <div class="right grid"></div>
         </div>
-
     </div>
+
 </body>
 
 </html>
