@@ -192,3 +192,11 @@ main {
     height: 350px;
     border-bottom: 1px #666 solid;
 }
+
+.benz {
+    float: left;
+}
+
+.party {
+    float: right;
+}
