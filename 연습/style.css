@@ -8,9 +8,11 @@ body {
     font-family: "돋움";
     color: #373737;
 }
-em , i {
-  font-style: normal;
+
+em, i {
+    font-style: normal;
 }
+
 a {
     text-decoration: none;
     color: #373737;
@@ -61,6 +63,252 @@ ol, ul, li {
     display: block;
 }
 
+.rank i {
+    padding-left: 8px;
+    background-image: url(images/up.png);
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+}
+
 .gnb_menu li {
     display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 0 7px 0 7px;
+}
+
+.lnb {
+    width: 990px;
+    height: 107px;
+    margin: 0 auto;
+}
+
+.lnb .banner {
+    width: 105px;
+    height: 27px;
+    position: relative;
+    top: 34px;
+    background-image: url(images/icon-banner.png);
+    background-repeat: no-repeat;
+}
+
+.lnb .event {
+    width: 239px;
+    height: 77px;
+    position: relative;
+    top: 20px;
+    background-image: url(images/event.png);
+}
+
+.lnb .internet {
+    width: 280px;
+    height: 52px;
+    margin: 0 auto;
+    background-image: url(images/internet.png);
+    position: relative;
+    top: 16px;
+}
+
+.lnb ul {
+    position: absolute;
+    top: 101px;
+    width: 304px;
+    height: 14px;
+}
+
+.lnb ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+.lnb ul li a {
+    font-family: "굴림";
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+.lnb input {
+    width: 238px;
+    height: 21px;
+    margin: 0 auto;
+    position: absolute;
+    border: 2px #3b5999 solid;
+    border-right: 0;
+}
+
+.in_search {
+    width: 280px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    top: 18px;
+}
+
+.in_search input:nth-child(2) {
+    width: 40px;
+    height: 21px;
+    border: 2px #3b5999 solid;
+    position: absolute;
+    background-image: url(images/search.png);
+    background-repeat: no-repeat;
+    left: 240px;
+}
+
+.menu {
+    width: 990px;
+    height: 39px;
+    margin: 0 auto;
+    background-color: #3b5999;
+}
+
+.menu ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 11px 12px 11px 11px;
+}
+
+.menu ul li.on {
+    background-color: #5785f2;
+}
+
+.menu ul li a {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "나눔고딕";
+    color: #fff;
+}
+
+.menu ul:nth-child(2) {
+    float: right;
+}
+
+.menu ul:nth-child(2) li a {
+    font-size: 11px;
+    font-family: "돋움";
+    color: #fff;
+}
+
+.menu ul:nth-child(2) li:nth-child(2) a {
+    font-size: 12px;
+    font-family: "돋움";
+    color: #fff;
+}
+
+.menu2 {
+    width: 990px;
+    height: 39px;
+    margin: 0 auto;
+    border-bottom: 1px #d5d0cc solid;
+}
+
+.menu2 ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 12px 5px 13px 6px;
+}
+
+.menu2 ul li a {
+    font-size: 13px;
+    font-family: "굴림";
+    color: #808080;
+}
+
+.menu2 ul:nth-child(2) li a {
+    font-size: 12px;
+    font-family: "돋움";
+    color: #373737;
+}
+
+.menu2 i {
+    color: blue;
+}
+
+.main {
+    width: 990px;
+    height: 1344px;
+    margin: 5px auto 0;
+    border: 1px #ccc solid;
+}
+
+.section {
+    width: 748px;
+    height: 1344px;
+}
+
+.aside {
+    width: 237px;
+    height: 1344px;
+    border-left: 1px #ccc solid;
+}
+
+.benz {
+    width: 747px;
+    height: 356px;
+    position: relative;
+}
+
+.benz div:nth-child(3) {
+    margin-top: 12px;
+}
+
+.benz ul {
+    width: 323px;
+    height: 232px;
+    padding: 12px 14px 10px 8px;
+}
+
+.benz ul li {
+    padding-bottom: 5px;
+    border-bottom: 1px #d5d0cc solid;
+}
+
+.benz ul li a {
+    display: block;
+    overflow: hidden;
+}
+
+.benz ul li a img {
+    float: left;
+}
+
+.benz ul li a span {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 55px;
+    margin: 14px 0 0 11px;
+}
+
+.benz strong {
+    display: block;
+}
+
+.car {
+    width: 100%;
+    height: 197px;
+    border-bottom: 1px #d5d0cc solid;
+}
+
+.car ul {
+    width: 100%;
+    height: 197px;
+}
+
+.car li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    margin-right: 10px;
+    position: absolute;
+    top: 35px;
+}
+
+.car li span {
+    display: block;
+    text-align: center;
+    width: 135px;
+    height: 58px;
 }
