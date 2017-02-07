@@ -13,12 +13,16 @@ em, i {
     font-style: normal;
 }
 
+img {
+    border: 0;
+}
+
 a {
     text-decoration: none;
     color: #373737;
 }
 
-ol, ul, li {
+ul, ol {
     list-style: none;
 }
 
@@ -210,13 +214,14 @@ ol, ul, li {
     padding: 12px 5px 13px 6px;
 }
 
-.menu2 ul li a {
+.menu2 ul.fl li a {
     font-size: 13px;
-    font-family: "굴림";
+    font-family: "나눔고딕";
     color: #808080;
+    font-weight: bold;
 }
 
-.menu2 ul:nth-child(2) li a {
+.menu2 ul.fr li a {
     font-size: 12px;
     font-family: "돋움";
     color: #373737;
@@ -236,12 +241,6 @@ ol, ul, li {
 .section {
     width: 748px;
     height: 1344px;
-}
-
-.aside {
-    width: 237px;
-    height: 1344px;
-    border-left: 1px #ccc solid;
 }
 
 .benz {
@@ -287,28 +286,424 @@ ol, ul, li {
 }
 
 .car {
-    width: 100%;
+    border-top: 1px #c7cbce solid;
     height: 197px;
-    border-bottom: 1px #d5d0cc solid;
 }
 
 .car ul {
-    width: 100%;
-    height: 197px;
+    position: relative;
+    top: 8px;
 }
 
-.car li {
+.car ul li {
     display: inline-block;
     *display: inline;
     *zoom: 1;
-    margin-right: 10px;
-    position: absolute;
-    top: 35px;
+    margin-right: 9px;
+    text-align: center;
 }
 
-.car li span {
+.car ul li span {
     display: block;
-    text-align: center;
-    width: 135px;
-    height: 58px;
+    padding-top: 11px;
+    padding-bottom: 15px;
+    color: #666;
+}
+
+.car .on {
+    padding-bottom: 8px;
+}
+
+.car .on li a {
+    font-size: 13px;
+    font-family: "굴림";
+    color: #333;
+}
+
+.aside {
+    width: 237px;
+    height: 1344px;
+    border-left: 1px #ccc solid;
+}
+
+.login {
+    width: 237px;
+    height: 100px;
+    background-color: #f6f6f6;
+    border-bottom: 1px #ccc solid;
+}
+
+.community_issue {
+    width: 216px;
+    height: 243px;
+    padding: 11px 10px 0 10px;
+}
+
+.car_news {
+    width: 215px;
+    height: 197px;
+    margin: 0 10px auto auto;
+    border-top: 1px #c7cbce solid;
+}
+
+.community_popular {
+    width: 215px;
+    height: 197px;
+    margin: 0 10px auto auto;
+    border-top: 1px #c7cbce solid;
+}
+
+.car_popular {
+    width: 215px;
+    height: 197px;
+    margin: 0 10px auto auto;
+    border-top: 1px #c7cbce solid;
+}
+
+.story {
+    width: 215px;
+    height: 197px;
+    margin: 0 10px auto auto;
+    border-top: 1px #c7cbce solid;
+}
+
+.event_news {
+    width: 215px;
+    height: 197px;
+    margin: 0 10px auto auto;
+    border-top: 1px #c7cbce solid;
+}
+
+.community_issue li {
+    position: relative;
+    padding: 8px 0 8px 5px;
+    background-image: url(images/one.png);
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+}
+
+.community_issue li+li {
+    position: relative;
+    padding: 8px 0 8px 5px;
+    background-image: url(images/two.png);
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+}
+
+.community_issue li+li+li {
+    position: relative;
+    padding: 8px 0 8px 5px;
+    background-image: url(images/three.png);
+    background-repeat: no-repeat;
+    background-position: 0 20px;
+}
+
+.community_issue li a {
+    display: block;
+    overflow: hidden;
+}
+
+.community_issue li img {
+    float: right;
+}
+
+.community_issue li span {
+    width: 117px;
+    height: 44px;
+    display: block;
+    float: left;
+    margin: 10px 4px 0 7px;
+}
+
+.community_issue>span {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.community_issue span.fr {
+    background-image: url(images/bbb.png);
+    background-repeat: no-repeat;
+    width: 66px;
+    height: 17px;
+}
+
+.car_news>span {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.car_news ul li {
+    padding-top: 10px;
+}
+
+.car_news ul li a {
+    display: block;
+    overflow: hidden;
+}
+
+.car_news ul li a img {
+    float: left;
+}
+
+.car_news ul li span {
+    width: 119px;
+    height: 30px;
+    display: block;
+    float: left;
+    margin: 10px 4px 0 7px;
+}
+
+.community_popular>span {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.community_popular li {
+    position: relative;
+    margin-top: 6px;
+    float: left;
+}
+
+.community_popular li a {
+    display: block;
+    overflow: hidden;
+}
+
+.community_popular li img {
+    float: left;
+}
+
+.community_popular ul li span {
+    width: 117px;
+    height: 44px;
+    display: block;
+    float: right;
+    margin: 1px 4px 0 7px;
+}
+
+.car_popular li {
+    position: relative;
+    padding: 8px 0 0 8px;
+    background-image: url(images/one2.png);
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+    border-bottom: 1px #e3e5e6 solid;
+}
+
+.car_popular li+li {
+    position: relative;
+    padding: 8px 0 0 8px;
+    background-image: url(images/two.png);
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+    border-bottom: 1px #e3e5e6 solid;
+}
+
+.car_popular li+li+li {
+    position: relative;
+    padding: 8px 0 0 8px;
+    background-image: url(images/three.png);
+    background-repeat: no-repeat;
+    background-position: 0 10px;
+    border-bottom: 1px #e3e5e6 solid;
+}
+
+.car_popular li a {
+    display: block;
+    overflow: hidden;
+}
+
+.car_popular li img {
+    float: right;
+}
+
+.car_popular li span {
+    width: 117px;
+    height: 44px;
+    display: block;
+    float: left;
+    margin: 0 4px 0 7px;
+}
+
+.car_popular>span {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.story>span {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.story img {
+    margin-top: 10px;
+}
+
+.eventstory {
+    width: 215px;
+    height: 96px;
+}
+
+.eventstory>span, .sns>span {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 13px;
+}
+
+.eventstory ul li {
+    margin-top: 5px;
+}
+
+.eventstory ul li img {
+    float: left;
+}
+
+.eventstory ul li span {
+    width: 125px;
+    height: 44px;
+    display: block;
+    float: right;
+    margin: 1px 4px 0 7px;
+}
+
+.sns {
+    width: 215px;
+    height: 100px;
+    border-top: 1px #c7cbce solid;
+}
+
+.sns img {
+    margin: 10px;
+}
+
+.footer {
+    width: 990px;
+    height: 246px;
+    margin: 0 auto;
+    border-top: 2px #8c909f solid;
+}
+
+.notice {
+    width: 990px;
+    height: 30px;
+    margin: 0 auto;
+    border: 1px #c7cbce solid;
+    border-top: 0;
+}
+
+.notice li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    padding: 9px 16px 0 14px;
+}
+
+.notice li a {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    font-weight: bold;
+    color: #494949;
+}
+
+.notice li:nth-child(2) {
+    padding-right: 23px;
+    background-image: url(images/icon_next.png);
+    background-repeat: no-repeat;
+    background-position: 94px 15px;
+}
+
+.notice li:nth-child(3) a {
+    color: #333;
+    font-weight: normal;
+    font-family: "돋움";
+    font-size: 12px;
+}
+
+.contents {
+    width: 990px;
+    height: 214px;
+    margin: 0 auto;
+    border: 1px #c7cbce solid;
+    border-top: 0;
+}
+
+.contents span {
+    font-family: "나눔고딕";
+    font-size: 13px;
+    font-weight: bold;
+    color: #494949;
+}
+
+.online {
+    width: 139px;
+    height: 214px;
+}
+
+.korea {
+    width: 122px;
+    height: 214px;
+}
+
+.import {
+    width: 122px;
+    height: 214px;
+}
+
+.mycar {
+    width: 122px;
+    height: 214px;
+}
+
+.noticeboard {
+    width: 122px;
+    height: 214px;
+}
+
+.library {
+    width: 122px;
+    height: 214px;
+}
+
+.service {
+    width: 235px;
+    height: 214px;
+}
+
+.contents span {
+    position: relative;
+    top: 23px;
+    left: 15px;
+}
+
+.contents ul {
+    position: relative;
+    top: 23px;
+    left: 15px;
+}
+
+.contents li {
+    padding-top: 5px;
+}
+
+.number {
+    width: 990px;
+    height: 30px;
+    margin: 0 auto;
+    border-bottom: 1px #b1b5c1 solid;
+}
+
+.number li {
+    display: inline-block;
+    background-image: url(images/footer1.png) -2px -5px;
 }
