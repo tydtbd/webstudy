@@ -2,14 +2,15 @@
   margin: 0;
   padding: 0;
 }
+body {
+  font-size: .75em;
+  height: 100%;
+}
 ul {
   list-style: none;
 }
 a {
   text-decoration: none;
-}
-body {
-  font-size: .75em;
 }
 header .gnb {
   height: 35px;

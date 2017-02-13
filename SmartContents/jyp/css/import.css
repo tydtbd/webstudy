@@ -5,6 +5,8 @@
 html,
 body {
   height: 100%;
+  font-size: 12px;
+  font-family: "맑은고딕";
 }
 a {
   text-decoration: none;
@@ -316,21 +318,38 @@ section.notice h2 {
   background-image: url(http://wondergirls.jype.com/images/title-noti.png);
 }
 section.notice .list {
-  width: 1000px;
+  max-width: 1000px;
+  width: 85%;
   margin: 0 auto;
-  border: 1px #F00 solid;
 }
 section.notice .list table {
   width: 100%;
   border-collapse: collapse;
 }
 section.notice .list table thead {
-  visibility: hidden;
+  border-top: 2px solid #d4d3d3;
+  border-bottom: 1px solid #d4d3d3;
+  background: #f8f5f2;
+}
+section.notice .list table thead td a {
+  color: #05abf6;
+  font-weight: bold;
+}
+section.notice .list table thead th {
+  color: #0a0502;
 }
 section.notice .list table td,
 section.notice .list table th {
-  border-bottom: 1px #000 solid;
-  padding: 4px 0;
+  padding: 11px 0 9px;
+  color: #848280;
+  border-bottom: 1px solid #d4d3d3;
+}
+section.notice .list table td a,
+section.notice .list table th a {
+  color: #1e1e1e;
+}
+section.notice .list table tr:first-child td {
+  color: #000;
 }
 section.notice .list table tr > td:first-child {
   text-align: center;
@@ -343,11 +362,22 @@ section.notice .list table td[colspan="3"] div {
 }
 section.notice .list table .elip {
   width: 400px;
-  border: 1px #F00 solid;
   display: block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+section.notice .list-btn {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 100px;
+}
+section.notice .list-btn a {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCC;
+  display: inline-block;
 }
 section.gallery {
   margin: 0 auto;
@@ -390,6 +420,39 @@ section.gallery .list-btn a {
 section.schedule h2 {
   background-image: url(http://wondergirls.jype.com/images/title-sche.png);
   background-repeat: no-repeat;
+}
+section.schedule .main {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+}
+section.schedule .main h3 {
+  text-align: center;
+  line-height: 40px;
+}
+section.schedule .main .fullbox {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto;
+}
+section.schedule .main .fullbox .schedule_button {
+  position: relative;
+  height: 40px;
+  background: #f8f5f2;
+}
+section.schedule .main .fullbox .schedule_button .btn {
+  display: block;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+section.schedule .main .fullbox .schedule_button .pm {
+  top: 13px;
+  left: 20px;
+}
+section.schedule .main .fullbox .schedule_button .nm {
+  top: 13px;
+  right: 20px;
 }
 section.video h2 {
   background-image: url(http://wondergirls.jype.com/images/title-video.png);
