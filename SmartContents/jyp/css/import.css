@@ -247,7 +247,7 @@ section.disco .wrap .album-contents {
 section.disco .wrap .album-thumb {
   width: 35.2%;
 }
-section.disco .wrap .album-thumb > img {
+section.disco .wrap .album-thumb img {
   width: 100%;
 }
 section.disco .wrap .album-thumb h2 {
@@ -453,6 +453,13 @@ section.schedule .main .fullbox .schedule_button .pm {
 section.schedule .main .fullbox .schedule_button .nm {
   top: 13px;
   right: 20px;
+}
+section.schedule .main .fullbox table {
+  float: left;
+  width: 40%;
+}
+section.schedule .main .fullbox table thead th {
+  height: 42px;
 }
 section.video h2 {
   background-image: url(http://wondergirls.jype.com/images/title-video.png);

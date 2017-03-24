@@ -1,38 +1,46 @@
-body, html {
+body {
     height: 100%;
+    font-size: 12px;
+    font-family: Dotum, "돋움";
 }
 
 * {
     margin: 0;
     padding: 0;
+}
+
+a {
     text-decoration: none;
 }
 
 header {
     width: 100%;
     height: 100px;
-    background: #000;
-    opacity: 0.6;
-    box-shadow: 0 1px 7px rgba(0, 0, 0, 0.4);
-    position: fixed;
+    background: #fff;
 }
 
 ul {
     list-style: none;
-    text-align: center;
-    float: right;
 }
 
-header li {
+.menu {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.menu li {
     height: 100%;
     line-height: 100px;
-    float: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
 }
 
-header li a {
+.menu li a {
     font-size: 16px;
     font-weight: bold;
-    color: #fff;
+    color: #000;
     margin: 0 50px 0 50px;
     display: block;
 }
@@ -41,16 +49,6 @@ h1 {
     color: #FFF;
     font-size: 60px;
     text-align: center;
-    position: relative;
-    line-height: 100px;
-    padding-top: 160px;
-    font-family: 'Droid Sans', sans-serif;
-}
-
-.profile {
-    background: url(http://68.media.tumblr.com/6060ee7633377be8dd7bd10c7bb9602d/tumblr_o4cqtyQHRX1slhhf0o1_1280.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 section {
@@ -61,41 +59,32 @@ section {
 footer {
     width: 100%;
     height: 100px;
-    bottom: 0;
-    position: relative;
-    background: #fff;
+    background: #000;
 }
 
-.page {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 20%;
+.profile {
+    background-color: #000;
 }
 
 .portfolio {
-    background: url(http://68.media.tumblr.com/74d1d7b162c929d16d51607be7ff7b05/tumblr_ohytcenTKk1slhhf0o1_1280.jpg) no-repeat;
+    background: url("portfolio/image/bg_02.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .contact {
-    background: url(https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_960_720.jpg) no-repeat;
+    background: url("portfolio/image/bg_03.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.con_box {
+.wrap {
     width: 1000px;
     height: 500px;
     background: #fff;
     position: relative;
     margin: 0 auto;
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
-}
-
-.back {
-    width: 100%;
-    height: 100%;
-    background: url(http://www.gaengkun.com/theme/basic/images/content_bg.png)
 }
